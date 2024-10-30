@@ -1,20 +1,21 @@
 # OWASP Top10 for LLM Applications 2025 Mapping
 
 This mapping is part of the Data Gathering Methodology initiative.
+
 The OWASP Top 10 for LLM Apps 2025 list was mapped to the main cybersecurity frameworks, here you will find:
 
 **1. NIST Cybersecurity Framework CFS2.0**
--	Provides comprehensive guidelines for managing cybersecurity risk.
--	A foundational framework for cybersecurity recognized worldwide.
+  -	Provides comprehensive guidelines for managing cybersecurity risk.
+  -	A foundational framework for cybersecurity recognized worldwide.
 
 **2. ISO/IEC Standards**
--	ISO/IEC 27001 (Information Security Management)
--	ISO/IEC 20547-4:2020 (Big Data Reference Architecture Security and Privacy)
--	Crucial for global business compliance and establishing security controls.
+  -	ISO/IEC 27001 (Information Security Management)
+  -	ISO/IEC 20547-4:2020 (Big Data Reference Architecture Security and Privacy)
+  -	Crucial for global business compliance and establishing security controls.
 
 **3. MITRE ATT&CK**
--	A detailed knowledge base for understanding and defending against cyber attacks.
--	Practical for threat modelling and security analysis.
+  -	A detailed knowledge base for understanding and defending against cyber attacks.
+  -	Practical for threat modelling and security analysis.
 
 **4. CIS Controls**
   -	Developed by the Centre for Internet Security, offering actionable controls.
@@ -61,14 +62,4 @@ The OWASP Top 10 for LLM Apps 2025 list was mapped to the main cybersecurity fra
   -	Standard that provides advanced supply chain capabilities for cyber risk reduction.
   -	Standard capable of representing software, hardware, services, and other types of inventory.
 
-## Future Trends
-
-### Emerging LLM Threats
-- **AI Model Extraction Attacks:** Attackers may reverse-engineer models by querying them extensively to recreate their structure and training data.
-- **Data Memorization Risks:** LLMs might inadvertently memorize and output parts of the training data, leading to privacy breaches.
-- **Autonomous Agents and LLMs:** As LLMs are increasingly integrated into autonomous agents, managing the scope of actions and ensuring oversight becomes critical.
-
-### Preparing for Future LLM Risks
-- Develop guidelines on securely integrating LLMs into more complex systems, such as autonomous vehicles or decision-making agents.
-- Advocate for more research on enhancing model robustness, focusing on differential privacy and secure federated learning techniques.
-
+For feedback and collaboration join the discussion [here](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/wiki/Data-Gathering-Methodology)
