@@ -1,8 +1,6 @@
-# OWASP Top 10 for LLM Applications: Mapping to CIS Controls
+# OWASP Top 10 for LLM Applications 2025 Mapping to CIS Controls
 
-## Executive Summary
-
-This document maps the *OWASP Top 10 for LLM Applications 2025* vulnerabilities to the relevant CIS Controls. The goal is to help organizations better understand the security measures required to mitigate risks associated with LLM (Large Language Model) applications. By aligning with the CIS Controls framework, organizations can strengthen their security posture and adopt a structured approach to mitigating LLM-related vulnerabilities.
+This document maps the [**OWASP Top 10 for LLM Applications 2025**](https://genai.owasp.org/) vulnerabilities to the relevant CIS Controls. The goal is to help organizations better understand the security measures required to mitigate risks associated with LLM (Large Language Model) applications. By aligning with the CIS Controls framework, organizations can strengthen their security posture and adopt a structured approach to mitigating LLM-related vulnerabilities.
 
 ---
 
@@ -20,7 +18,6 @@ Prompt injection involves altering the behavior or output of LLMs through crafte
 - **CIS Control 8: Audit Log Management**
   - Maintain logs of all inputs, outputs, and alterations to monitor prompt injections and potential breaches.
 
-[Learn more about CIS Control 3](https://www.cisecurity.org/controls/data-protection) | [OWASP Top 10 for LLMs:2025 Prompt Injection](https://genai.owasp.org)
 
 ## LLM02:2025 - Sensitive Information Disclosure: Mapped CIS Controls
 
@@ -35,7 +32,6 @@ This vulnerability involves the unintentional exposure of sensitive information 
 - **CIS Control 9: Email and Web Browser Protections**
   - Use secure communication channels and prevent exposure through external sources.
 
-[Learn more about CIS Control 4](https://www.cisecurity.org/controls/secure-configuration) | [OWASP Top 10 for LLMs:2025 Sensitive Information Disclosure](https://genai.owasp.org)
 
 ## LLM03:2025 - Supply Chain Vulnerabilities: Mapped CIS Controls
 
@@ -50,7 +46,6 @@ LLMs depend on third-party components, making them susceptible to supply chain r
 - **CIS Control 7: Continuous Vulnerability Management**
   - Conduct regular vulnerability assessments on third-party components used in LLMs.
 
-[Learn more about CIS Control 2](https://www.cisecurity.org/controls/inventory-and-control-of-software-assets) | [OWASP Top 10 for LLMs:2025 Supply Chain Risks](https://genai.owasp.org)
 
 ## LLM04:2025 - Data and Model Poisoning: Mapped CIS Controls
 
@@ -65,8 +60,6 @@ Data poisoning involves feeding malicious data into an LLM's training set, poten
 - **CIS Control 18: Penetration Testing**
   - Simulate adversarial attacks to identify and mitigate poisoning vulnerabilities.
 
-[Learn more about CIS Control 7](https://www.cisecurity.org/controls/continuous-vulnerability-management) | [OWASP Top 10 for LLMs:2025 Data and Model Poisoning](https://genai.owasp.org)
-
 ## LLM05:2025 - Insecure Output Handling: Mapped CIS Controls
 
 ### Description
@@ -80,7 +73,6 @@ Insecure output handling can cause LLMs to generate harmful content, leading to 
 - **CIS Control 16: Application Software Security**
   - Implement secure coding practices to prevent code injection or unsafe execution through outputs.
 
-[Learn more about CIS Control 16](https://www.cisecurity.org/controls/application-software-security) | [OWASP Top 10 for LLMs:2025 Insecure Output Handling](https://genai.owasp.org)
 
 ## LLM06:2025 - Excessive Agency: Mapped CIS Controls
 
@@ -95,7 +87,6 @@ Excessive agency refers to situations where LLMs have too much autonomy, potenti
 - **CIS Control 17: Incident Response Management**
   - Establish protocols to respond to incidents caused by LLMs' unauthorized actions.
 
-[Learn more about CIS Control 11](https://www.cisecurity.org/controls/secure-configuration-for-network-devices) | [OWASP Top 10 for LLMs:2025 Excessive Agency](https://genai.owasp.org)
 
 ## LLM07:2025 - System Prompt Leakage: Mapped CIS Controls
 
@@ -110,7 +101,6 @@ This vulnerability involves exposing system prompts or configuration details, le
 - **CIS Control 8: Audit Log Management**
   - Log access to system prompts and configurations to detect unauthorized attempts.
 
-[Learn more about CIS Control 10](https://www.cisecurity.org/controls/malware-defenses) | [OWASP Top 10 for LLMs:2025 System Prompt Leakage](https://genai.owasp.org)
 
 ## LLM08:2025 - Vector and Embedding Weaknesses: Mapped CIS Controls
 
@@ -125,7 +115,6 @@ These weaknesses involve the misuse of vectors and embeddings to manipulate LLM 
 - **CIS Control 3: Data Protection**
   - Ensure vector representations are encrypted and secured.
 
-[Learn more about CIS Control 16](https://www.cisecurity.org/controls/application-software-security) | [OWASP Top 10 for LLMs:2025 Vector Weaknesses](https://genai.owasp.org)
 
 ## LLM09:2025 - Misinformation: Mapped CIS Controls
 
@@ -140,7 +129,6 @@ Misinformation occurs when LLMs generate or propagate false information, potenti
 - **CIS Control 7: Continuous Vulnerability Management**
   - Continuously assess outputs to detect and correct misinformation.
 
-[Learn more about CIS Control 13](https://www.cisecurity.org/controls/network-monitoring-and-defense) | [OWASP Top 10 for LLMs:2025 Misinformation](https://genai.owasp.org)
 
 ## LLM10:2025 - Unbounded Consumption: Mapped CIS Controls
 
@@ -155,11 +143,9 @@ This vulnerability involves resource exhaustion caused by unbounded processing o
 - **CIS Control 13: Network Monitoring and Defense**
   - Monitor network usage and traffic to detect excessive consumption.
 
-[Learn more about CIS Control 4](https://www.cisecurity.org/controls/secure-configuration) | [OWASP Top 10 for LLMs:2025 Unbounded Consumption](https://genai.owasp.org)
 
 ---
 
-## Conclusion
 This mapping helps organizations align their AI application security strategies with the CIS Controls framework, promoting robust defense against LLM-related vulnerabilities. By implementing these controls, organizations can effectively mitigate the unique risks associated with LLMs, fostering secure and trustworthy AI deployment.
 
 ## Further Reading
