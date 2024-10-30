@@ -1,5 +1,7 @@
-# 2025LLMTop10Mapping
-OWASP Top 10 for LLM Apps 2025 list was mapped to the main cybersecurity frameworks, you will find:
+# OWASP Top10 for LLM Applications 2025 Mapping
+
+This mapping is part of the Data Gathering Methodology initiative.
+The OWASP Top 10 for LLM Apps 2025 list was mapped to the main cybersecurity frameworks, here you will find:
 
 **1. NIST Cybersecurity Framework CFS2.0**
 -	Provides comprehensive guidelines for managing cybersecurity risk.
