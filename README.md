@@ -60,3 +60,15 @@ The OWASP Top 10 for LLM Apps 2025 list was mapped to the main cybersecurity fra
 **14. CycloneDX Machine Learning Software Bill of Materials (SBOM)**
   -	Standard that provides advanced supply chain capabilities for cyber risk reduction.
   -	Standard capable of representing software, hardware, services, and other types of inventory.
+
+## Future Trends
+
+### Emerging LLM Threats
+- **AI Model Extraction Attacks:** Attackers may reverse-engineer models by querying them extensively to recreate their structure and training data.
+- **Data Memorization Risks:** LLMs might inadvertently memorize and output parts of the training data, leading to privacy breaches.
+- **Autonomous Agents and LLMs:** As LLMs are increasingly integrated into autonomous agents, managing the scope of actions and ensuring oversight becomes critical.
+
+### Preparing for Future LLM Risks
+- Develop guidelines on securely integrating LLMs into more complex systems, such as autonomous vehicles or decision-making agents.
+- Advocate for more research on enhancing model robustness, focusing on differential privacy and secure federated learning techniques.
+
