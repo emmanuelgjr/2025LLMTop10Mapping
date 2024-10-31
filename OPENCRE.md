@@ -1,6 +1,6 @@
 # OWASP Top 10 for Large Language Model Applications 2025 Mapped to OPENCRE
 
-This mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with the **OPENCRE** (Open Common Requirement Enumeration) framework, linking potential threats to appropriate mitigation measures.
+This repo mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with the [**OPENCRE (Open Common Requirement Enumeration)**](https://opencre.org/) framework, linking potential threats to appropriate mitigation measures.
 
 ## Table of Contents
 1. [LLM01: Prompt Injection](https://genai.owasp.org/)
@@ -16,10 +16,9 @@ This mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with the 
 
 ---
 
-## 1. LLM01:2025 Prompt Injection
-**[OWASP Reference](https://genai.owasp.org)**
+## 1. [LLM01:2025 Prompt Injection](https://genai.owasp.org)
 
-- **Description:** Occurs when crafted inputs alter LLM behavior or outputs, bypassing safety measures and enabling unauthorized actions.
+- **Description:** Occurs when crafted inputs alter LLM behaviour or outputs, bypassing safety measures and enabling unauthorized actions.
 - **Impact:** Unauthorized data access, sensitive information exposure, and biased decision-making.
 - **OPENCRE Mapping:**
   - [CRE-1713: Injection Attacks](https://opencre.org/cre/1713)
@@ -27,14 +26,13 @@ This mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with the 
   - [CRE-1320: Command Injection](https://opencre.org/cre/1320)
 
 **Mitigation Strategies:**
-- Constrain model behavior by enforcing strict response rules within prompts.
+- Constrain model behaviour by enforcing strict response rules within prompts.
 - Input & Output Filtering: Use semantic filters to handle suspicious content.
 - Adversarial Testing: Conduct regular penetration testing to identify injection risks.
 
 ---
 
-## 2. LLM02:2025 Sensitive Information Disclosure
-**[OWASP Reference](https://genai.owasp.org)**
+## 2. [LLM02:2025 Sensitive Information Disclosure](https://genai.owasp.org)
 
 - **Description:** The model may expose sensitive data, including PII, business secrets, or proprietary algorithms.
 - **Impact:** Data leaks, privacy violations, and IP breaches.
@@ -45,13 +43,12 @@ This mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with the 
 
 **Mitigation Strategies:**
 - Data Sanitization: Scrub or mask sensitive data inputs.
-- Implement strict access controls using least-privilege access.
+- Implement strict access controls using least privilege access.
 - Decentralize training data through federated learning to minimize risks.
 
 ---
 
-## 3. LLM03:2025 Supply Chain Risks
-**[OWASP Reference](https://genai.owasp.org)**
+## 3. [LLM03:2025 Supply Chain Risks](https://genai.owasp.org)
 
 - **Description:** Vulnerabilities from third-party components, data sources, or model dependencies.
 - **Impact:** Compromise of data integrity, injection of malicious data, and cascading failures.
@@ -66,10 +63,9 @@ This mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with the 
 
 ---
 
-## 4. LLM04:2025 Data and Model Poisoning
-**[OWASP Reference](https://genai.owasp.org)**
+## 4. [LLM04:2025 Data and Model Poisoning](https://genai.owasp.org)
 
-- **Description:** Altered training data or model parameters, causing incorrect outputs or malicious behavior.
+- **Description:** Altered training data or model parameters, causing incorrect outputs or malicious behaviour.
 - **Impact:** Deceptive responses, compromised decision-making, and model degradation.
 - **OPENCRE Mapping:**
   - [CRE-1623: Data Poisoning](https://opencre.org/cre/1623)
@@ -82,8 +78,7 @@ This mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with the 
 
 ---
 
-## 5. LLM05:2025 Insecure Output Handling
-**[OWASP Reference](https://genai.owasp.org)**
+## 5. [LLM05:2025 Insecure Output Handling](https://genai.owasp.org)
 
 - **Description:** Outputs not properly sanitized may lead to unauthorized disclosures or actions.
 - **Impact:** Data leakage, unintended command execution, or policy violations.
@@ -98,10 +93,9 @@ This mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with the 
 
 ---
 
-## 6. LLM06:2025 Excessive Agency
-**[OWASP Reference](https://genai.owasp.org)**
+## 6. [LLM06:2025 Excessive Agency](https://genai.owasp.org)
 
-- **Description:** LLMs executing privileged actions beyond intended scope.
+- **Description:** LLMs executing privileged actions beyond the intended scope.
 - **Impact:** Unauthorized access, security breaches, and operational disruptions.
 - **OPENCRE Mapping:**
   - [CRE-1625: Excessive Functionality](https://opencre.org/cre/1625)
@@ -114,8 +108,7 @@ This mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with the 
 
 ---
 
-## 7. LLM07:2025 System Prompt Leakage
-**[OWASP Reference](https://genai.owasp.org)**
+## 7. [LLM07:2025 System Prompt Leakage](https://genai.owasp.org)
 
 - **Description:** Exposure of internal prompts or configurations, leading to potential exploits.
 - **Impact:** System configuration leaks, unauthorized access, or privilege escalation.
@@ -130,8 +123,7 @@ This mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with the 
 
 ---
 
-## 8. LLM08:2025 Vector and Embedding Weaknesses
-**[OWASP Reference](https://genai.owasp.org)**
+## 8. [LLM08:2025 Vector and Embedding Weaknesses](https://genai.owasp.org)
 
 - **Description:** Flaws in embeddings or vector representations may lead to inaccurate responses or vulnerabilities.
 - **Impact:** Malicious embedding attacks, vector manipulation, and bias introduction.
@@ -146,8 +138,7 @@ This mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with the 
 
 ---
 
-## 9. LLM09:2025 Misinformation
-**[OWASP Reference](https://genai.owasp.org)**
+## 9. [LLM09:2025 Misinformation](https://genai.owasp.org)
 
 - **Description:** LLMs generating false or misleading information.
 - **Impact:** Spread of misinformation, credibility loss, and incorrect decision-making.
@@ -162,8 +153,7 @@ This mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with the 
 
 ---
 
-## 10. LLM10:2025 Unbounded Consumption
-**[OWASP Reference](https://genai.owasp.org)**
+## 10. [LLM10:2025 Unbounded Consumption](https://genai.owasp.org)
 
 - **Description:** LLMs consuming excessive resources, leading to performance issues or denial-of-service.
 - **Impact:** Resource exhaustion, slow response times, or service outages.
@@ -178,5 +168,5 @@ This mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with the 
 
 ---
 
-The OWASP Top 10 for Large Language Model Applications provides a comprehensive guide for identifying and mitigating the most critical risks associated with LLM deployments, mapping these risks to the OPENCRE framework, allow organizations to better understand the necessary security controls and implement strategies to protect against vulnerabilities specific to LLM systems. Proactive measures, such as thorough risk assessment, consistent validation, and robust security controls, are essential for mitigating the evolving threats in the LLM landscape.
+The OWASP Top 10 for Large Language Model Applications provides a comprehensive guide for identifying and mitigating the most critical risks associated with LLM deployments, mapping these risks to the OPENCRE framework, allows organizations to better understand the necessary security controls and implement strategies to protect against vulnerabilities specific to LLM systems. Proactive measures, such as thorough risk assessment, consistent validation, and robust security controls, are essential for mitigating the evolving threats in the LLM landscape.
 
