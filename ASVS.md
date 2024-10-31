@@ -1,7 +1,7 @@
 #  OWASP Top 10 for Large Language Model Applications 2025 Mapped to ASVS
 
 
-This document provides a detailed mapping of the vulnerabilities outlined in the [OWASP Top 10 for LLM Applications: 2025](https://genai.owasp.org) to the [OWASP Application Security Verification Standard (ASVS)](https://owasp.org/ASVS/). The goal is to offer developers and security teams a comprehensive view of how to align AI-specific security measures with broader application security standards.
+This repo provides a detailed mapping of the vulnerabilities outlined in the [OWASP Top 10 for LLM Applications: 2025](https://genai.owasp.org) to the [OWASP Application Security Verification Standard (ASVS)](https://owasp.org/ASVS/). The goal is to offer developers and security teams a comprehensive view of how to align AI-specific security measures with broader application security standards.
 
 ## Overview of Vulnerabilities and ASVS Mapping
 
@@ -22,12 +22,12 @@ This document provides a detailed mapping of the vulnerabilities outlined in the
 
 ## LLM01:2025 - Prompt Injection
 
-- **Description**: Prompt injection occurs when user inputs alter the behavior of the LLM, potentially causing unauthorized access or manipulation.
+- **Description**: Prompt injection occurs when user inputs alter the behaviour of the LLM, potentially causing unauthorized access or manipulation.
 - **ASVS Mapping**:
   - **ASVS 5.3: Input Validation and Encoding**: Implement strict input validation to prevent manipulation of LLM prompts.
   - **ASVS 8.1: Integrity Verification**: Enforce verification of prompts to maintain integrity.
 - **Mitigation Strategies**:
-  1. Constrain model behavior with strict role definitions.
+  1. Constrain model behaviour with strict role definitions.
   2. Validate expected output formats using deterministic code.
 - **Practical Example**:
   - If an LLM is used to generate responses for customer support, use predefined response templates and validate user inputs rigorously.
