@@ -354,9 +354,7 @@ To ensure swift responses to LLM security incidents, consider the following:
 
 ---
 
-## Call for Community Collaboration
-
-We encourage the security community to participate in keeping this document updated. If you have suggestions, additions, or corrections, please contribute to the project on our [GitHub repository](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/wiki/Data-Gathering-Methodology). Your contributions are essential to maintaining a robust and comprehensive resource for securing LLM applications.
+The EU plays an important part in regulating and securing systems worldwide. Organizations that trade with the region must comply with the requirements to ensure ethical and secure, products, services and solutions.
 
 ---
 
