@@ -1,34 +1,28 @@
-# Mapping OWASP Top 10 for Large Language Model Applications to NIST Cybersecurity Framework (CSF) 2.0
+# OWASP Top 10 for Large Language Model Applications 2025 Mapped to NIST Cybersecurity Framework (CSF) 2.0
 
-This document provides a comprehensive mapping of each vulnerability from the OWASP Top 10 for LLM Applications to the corresponding categories, subcategories, and functions in the NIST Cybersecurity Framework (CSF) 2.0.
+This repo provides a comprehensive mapping of each vulnerability from the OWASP Top 10 for LLM Applications 2025 to the corresponding categories, subcategories, and functions in the NIST Cybersecurity Framework (CSF) 2.0.
 
 ## Table of Contents
 
-1. [Overview](#overview)
-2. [Mapping OWASP Top 10 for LLM Applications to NIST CSF 2.0](#mapping)
-   - [LLM01:2025 - Prompt Injection](#llm01-2025---prompt-injection)
-   - [LLM02:2025 - Sensitive Information Disclosure](#llm02-2025---sensitive-information-disclosure)
-   - [LLM03:2025 - Supply Chain Risks](#llm03-2025---supply-chain-risks)
-   - [LLM04:2025 - Data and Model Poisoning](#llm04-2025---data-and-model-poisoning)
-   - [LLM05:2025 - Insecure Output Handling](#llm05-2025---insecure-output-handling)
-   - [LLM06:2025 - Excessive Agency](#llm06-2025---excessive-agency)
-   - [LLM07:2025 - System Prompt Leakage](#llm07-2025---system-prompt-leakage)
-   - [LLM08:2025 - Vector and Embedding Weaknesses](#llm08-2025---vector-and-embedding-weaknesses)
-   - [LLM09:2025 - Misinformation](#llm09-2025---misinformation)
-   - [LLM10:2025 - Unbounded Consumption](#llm10-2025---unbounded-consumption)
-3. [Conclusion](#conclusion)
+- [LLM01:2025 - Prompt Injection](https://genai.owasp.org/)
+- [LLM02:2025 - Sensitive Information Disclosure](https://genai.owasp.org/)
+- [LLM03:2025 - Supply Chain Risks](https://genai.owasp.org/)
+- [LLM04:2025 - Data and Model Poisoning](https://genai.owasp.org/)
+- [LLM05:2025 - Insecure Output Handling](https://genai.owasp.org/)
+- [LLM06:2025 - Excessive Agency](https://genai.owasp.org/)
+- [LLM07:2025 - System Prompt Leakage](https://genai.owasp.org/)
+- [LLM08:2025 - Vector and Embedding Weaknesses](https://genai.owasp.org/)
+- [LLM09:2025 - Misinformation](https://genai.owasp.org/)
+- [LLM10:2025 - Unbounded Consumption](https://genai.owasp.org/)
 
-## Overview
 
-The [OWASP Top 10 for LLM Applications](https://genai.owasp.org) is a guide designed to help developers, security teams, and stakeholders understand the security risks associated with deploying Large Language Models (LLMs). By mapping these vulnerabilities to the [NIST CSF 2.0](https://www.nist.gov/cyberframework), we aim to integrate these risks into a widely recognized security framework, facilitating better risk management and response.
-
-## Mapping OWASP Top 10 for LLM Applications to NIST CSF 2.0 <a name="mapping"></a>
+The [OWASP Top 10 for LLM Applications](https://genai.owasp.org) is a guide designed to help developers, security teams, and stakeholders understand the security risks associated with deploying Large Language Models (LLMs). These vulnerabilities are mapped to the [NIST CSF 2.0](https://www.nist.gov/cyberframework), we aim to integrate these risks into a widely recognized security framework, facilitating better risk management and response.
 
 The following sections provide detailed mappings of each vulnerability from the OWASP Top 10 for LLM Applications (2025) to the appropriate functions, categories, and subcategories within NIST CSF 2.0.
 
 ### LLM01:2025 - Prompt Injection <a name="llm01-2025---prompt-injection"></a>
 
-- **Description**: Prompt Injection occurs when user inputs manipulate the model's behavior in unintended ways, potentially leading to unauthorized access, content manipulation, or security breaches.
+- **Description**: Prompt Injection occurs when user inputs manipulate the model's behaviour in unintended ways, potentially leading to unauthorized access, content manipulation, or security breaches.
 - **NIST CSF Mapping**:
   - **Identify (ID)**:
     - **ID.AM-5**: Resources (including hardware, devices, data, and software) are prioritized based on their classification, criticality, and business value to ensure secure LLM deployment.
@@ -65,7 +59,7 @@ The following sections provide detailed mappings of each vulnerability from the 
   - **Identify (ID)**:
     - **ID.BE-5**: Address supply chain risk management processes to mitigate cyber risks from third-party dependencies.
   - **Protect (PR)**:
-    - **PR.DS-6**: Use integrity checking mechanisms to verify the integrity of hardware and software in the supply chain.
+    - **PR.DS-6**: Use integrity-checking mechanisms to verify the integrity of hardware and software in the supply chain.
   - **Detect (DE)**:
     - **DE.CM-7**: Monitor for unauthorized connections, devices, or software introduced through the supply chain.
   - **Respond (RS)**:
@@ -166,7 +160,6 @@ The following sections provide detailed mappings of each vulnerability from the 
 
 [Learn more about Unbounded Consumption](https://genai.owasp.org)
 
-## Conclusion <a name="conclusion"></a>
 
-Mapping the OWASP Top 10 for LLM Applications to the NIST Cybersecurity Framework helps organizations integrate LLM-specific risks into their broader cybersecurity strategy, ensuring a comprehensive approach to securing AI-driven applications. Organizations are encouraged to assess their systems against these vulnerabilities and apply appropriate NIST CSF controls to enhance their security posture.
+Mapping the OWASP Top 10 for LLM Applications 2025 to the NIST Cybersecurity Framework helps organizations integrate LLM-specific risks into their broader cybersecurity strategy, ensuring a comprehensive approach to securing AI-driven applications. Organizations are encouraged to assess their systems against these vulnerabilities and apply appropriate NIST CSF controls to enhance their security posture.
 
