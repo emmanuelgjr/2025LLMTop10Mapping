@@ -1,16 +1,16 @@
 # OWASP Top 10 for LLM Applications Mapped to SAMM
 
-This repo maps the vulnerabilities described in the OWASP Top 10 for Large Language Model (LLM) Applications to the Software Assurance Maturity Model (SAMM) framework, helping organizations assess, improve, and implement secure software development practices.
+This repo maps the vulnerabilities described in the OWASP Top 10 for Large Language Model (LLM) Applications to the [Software Assurance Maturity Model (SAMM)](https://owaspsamm.org/) framework, helping organizations assess, improve, and implement secure software development practices.
 
 ## [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org)
 
 ### 1. LLM01:2025 Prompt Injection
-- **Description**: Prompt injection vulnerabilities occur when user inputs manipulate the LLM’s behavior in unintended ways. This can lead to disclosure of sensitive information, unauthorized access, or critical decision manipulation.
+- **Description**: Prompt injection vulnerabilities occur when user inputs manipulate the LLM’s behaviour in unintended ways. This can lead to disclosure of sensitive information, unauthorized access, or critical decision manipulation.
 - **SAMM Mapping**:
   - **Governance**:
     - **Security Requirements**: Define clear prompt processing requirements to mitigate manipulation risks.
   - **Design**:
-    - **Threat Assessment**: Include prompt injection scenarios in threat modeling to understand and predict potential prompt-based attacks.
+    - **Threat Assessment**: Include prompt injection scenarios in threat modelling to understand and predict potential prompt-based attacks.
   - **Implementation**:
     - **Secure Build**: Implement secure prompt handling code that validates and filters inputs.
   - **Verification**:
@@ -44,7 +44,7 @@ This repo maps the vulnerabilities described in the OWASP Top 10 for Large Langu
   - **Verification**:
     - **Security Testing**: Conduct integrity checks on datasets and libraries before use in training or deployment.
   - **Operations**:
-    - **Operational Monitoring**: Monitor for signs of supply chain compromise, such as unusual behavior patterns in LLM outputs.
+    - **Operational Monitoring**: Monitor for signs of supply chain compromise, such as unusual behaviour patterns in LLM outputs.
 
 ### 4. LLM04:2025 Data and Model Poisoning
 - **Description**: Data and model poisoning involves adversaries introducing malicious data to manipulate model training or outputs.
@@ -84,7 +84,7 @@ This repo maps the vulnerabilities described in the OWASP Top 10 for Large Langu
   - **Implementation**:
     - **Access Controls**: Implement controls that restrict the level of autonomy granted to LLMs.
   - **Verification**:
-    - **Security Testing**: Test for unintended behaviors resulting from excessive model agency.
+    - **Security Testing**: Test for unintended behaviours resulting from excessive model agency.
   - **Operations**:
     - **Operational Monitoring**: Continuously monitor LLM operations to prevent unauthorized actions.
 
