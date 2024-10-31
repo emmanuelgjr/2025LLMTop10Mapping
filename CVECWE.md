@@ -1,6 +1,6 @@
-# OWASP Top 10 for Large Language Model Applications 2025  Mapping to CVE and CWE 
+# OWASP Top 10 for Large Language Model Applications 2025  Mapped to CVE and CWE 
 
-This document maps vulnerabilities from the OWASP Top 10 for LLM Applications 2025 to corresponding Common Vulnerabilities and Exposures (CVEs) and Common Weakness Enumerations (CWEs). This mapping provides insight into attack vectors, mitigation strategies, and security frameworks.
+This repo maps vulnerabilities from the OWASP Top 10 for LLM Applications 2025 to corresponding Common Vulnerabilities and Exposures (CVEs) and Common Weakness Enumerations (CWEs). This mapping provides insight into attack vectors, mitigation strategies, and security frameworks. We understand vulnerabilities in the wild are coming up every day, use the mapping as a reference and keep vigilant on new developments.
 
 ## Table of Contents
 1. [LLM01:2025 Prompt Injection](https://genai.owasp.org/)
@@ -15,7 +15,7 @@ This document maps vulnerabilities from the OWASP Top 10 for LLM Applications 20
 10. [LLM10:2025 Unbounded Consumption](https://genai.owasp.org/)
 
 ## LLM01:2025 Prompt Injection
-Prompt injection occurs when malicious inputs manipulate model behavior, bypass safety measures, or trigger unauthorized actions.
+Prompt injection occurs when malicious inputs manipulate model behaviour, bypass safety measures, or trigger unauthorized actions.
 
 - **Related CVEs**:
   - [CVE-2024-5184](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-5184): Exploited LLM prompt injection, leading to sensitive information leaks and unauthorized actions.
@@ -43,10 +43,10 @@ Supply chain vulnerabilities involve compromised dependencies, tools, or pre-tra
   - [CWE-119: Improper Restriction of Operations within Buffer Bounds](https://cwe.mitre.org/data/definitions/119.html)
 
 ## LLM04:2025 Data and Model Poisoning
-Data and model poisoning involves manipulating training data to alter model behavior.
+Data and model poisoning involves manipulating training data to alter model behaviour.
 
 - **Related CVEs**:
-  - No specific CVEs; primarily involves introducing biases or malicious behavior through poisoned data.
+  - No specific CVEs; primarily involves introducing biases or malicious behaviour through poisoned data.
 - **Related CWEs**:
   - [CWE-506: Embedded Malicious Code](https://cwe.mitre.org/data/definitions/506.html)
   - [CWE-1021: Improper Data Validation](https://cwe.mitre.org/data/definitions/1021.html)
@@ -70,7 +70,7 @@ Excessive agency involves LLMs gaining unauthorized control over actions beyond 
   - [CWE-862: Missing Authorization](https://cwe.mitre.org/data/definitions/862.html)
 
 ## LLM07:2025 System Prompt Leakage
-System prompt leakage involves exposing system-level instructions that control LLM behavior.
+System prompt leakage involves exposing system-level instructions that control LLM behaviour.
 
 - **Related CVEs**:
   - No specific CVEs; often discussed in research on prompt leakage via inference.
@@ -103,4 +103,4 @@ Unbounded consumption refers to excessive resource consumption (e.g., memory, pr
 - **Related CWEs**:
   - [CWE-400: Uncontrolled Resource Consumption](https://cwe.mitre.org/data/definitions/400.html)
 
-We encourage professionals to stay vigilant and continuously monitor the evolving threat landscape to remain informed about emerging vulnerabilities and security developments.
+We encourage professionals to always stand on guard and continuously monitor the evolving threat landscape to remain informed about emerging vulnerabilities and security developments.
