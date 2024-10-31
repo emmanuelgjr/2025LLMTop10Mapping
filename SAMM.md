@@ -144,9 +144,6 @@ This repo maps the vulnerabilities described in the OWASP Top 10 for Large Langu
   - **Operations**:
     - **Operational Monitoring**: Continuously monitor resource usage to prevent unbounded consumption.
 
-## References
-- [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org)
-- [Software Assurance Maturity Model (SAMM)](https://owaspsamm.org/)
 
 It is crucial for stakeholders across governance, design, implementation, verification, and operational phases to collaborate and ensure the responsible development and deployment of LLM technologies.
 
