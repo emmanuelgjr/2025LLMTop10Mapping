@@ -1,13 +1,13 @@
-# OWASP Top 10 for LLM Applications 2025 Mapping to CIS Controls
+# OWASP Top 10 for LLM Applications 2025 Mapped to CIS Controls
 
-This document maps the [**OWASP Top 10 for LLM Applications 2025**](https://genai.owasp.org/) vulnerabilities to the relevant CIS Controls. The goal is to help organizations better understand the security measures required to mitigate risks associated with LLM (Large Language Model) applications. By aligning with the CIS Controls framework, organizations can strengthen their security posture and adopt a structured approach to mitigating LLM-related vulnerabilities.
+This repo maps the [**OWASP Top 10 for LLM Applications 2025**](https://genai.owasp.org/) vulnerabilities to the relevant CIS Controls. The goal is to help organizations better understand the security measures required to mitigate risks associated with LLM (Large Language Model) applications. The CIS Controls framework alignment offers organizations the ability to strengthen their security posture and adopt a structured approach to mitigating LLM-related vulnerabilities.
 
 ---
 
 ## LLM01:2025 - Prompt Injection: Mapped CIS Controls
 
 ### Description
-Prompt injection involves altering the behavior or output of LLMs through crafted inputs. These vulnerabilities can bypass safety mechanisms and lead to unauthorized actions.
+Prompt injection involves altering the behaviour or output of LLMs through crafted inputs. These vulnerabilities can bypass safety mechanisms and lead to unauthorized actions.
 
 ### Relevant CIS Controls
 - **CIS Control 3: Data Protection**
@@ -50,7 +50,7 @@ LLMs depend on third-party components, making them susceptible to supply chain r
 ## LLM04:2025 - Data and Model Poisoning: Mapped CIS Controls
 
 ### Description
-Data poisoning involves feeding malicious data into an LLM's training set, potentially corrupting its behavior.
+Data poisoning involves feeding malicious data into an LLM's training set, potentially corrupting its behaviour.
 
 ### Relevant CIS Controls
 - **CIS Control 7: Continuous Vulnerability Management**
@@ -146,7 +146,7 @@ This vulnerability involves resource exhaustion caused by unbounded processing o
 
 ---
 
-This mapping helps organizations align their AI application security strategies with the CIS Controls framework, promoting robust defense against LLM-related vulnerabilities. By implementing these controls, organizations can effectively mitigate the unique risks associated with LLMs, fostering secure and trustworthy AI deployment.
+This mapping helps organizations align their AI application security strategies with the CIS Controls framework, promoting robust defence against LLM-related vulnerabilities. These controls when implemented allow organizations to effectively mitigate the unique risks associated with LLMs, fostering secure and trustworthy AI deployment.
 
 ## Further Reading
 - [OWASP Top 10 for LLM Applications](https://genai.owasp.org)
