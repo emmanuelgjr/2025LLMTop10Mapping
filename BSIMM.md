@@ -3,7 +3,7 @@
 This repo objective is to enhance LLM application security by mapping OWASP Top 10 for LLM Apps 2025 vulnerabilities to the BSIMM framework.
 
 ## LLM01:2025 Prompt Injection
-- **Description:** Malicious prompts can alter LLM behavior, resulting in unauthorized data access or unintended operations.
+- **Description:** Malicious prompts can alter LLM behaviour, resulting in unauthorized data access or unintended operations.
 - **BSIMM Mapping:**
   - **SM1.1:** Include LLM models in software inventory for monitoring.
   - **SM2.3:** Review prompt filtering and validation security features.
@@ -82,5 +82,5 @@ This repo objective is to enhance LLM application security by mapping OWASP Top 
   - **CR1.1:** Limit resource consumption with access controls.
 - **Resources:** [AI System Resource Limiting](https://genai.owasp.org)
 
-The OWASP Top 10 for LLM Applications, when mapped to the BSIMM framework, provides a structured approach to improving the security of large language models. By understanding the specific vulnerabilities unique to LLMs and applying established security practices, organizations can better safeguard their AI systems against emerging threats. Continuous assessment, testing, and monitoring are essential to address evolving risks and ensure robust security measures are in place.
+The OWASP Top 10 for LLM Applications mapped to the BSIMM framework provides a structured approach to improving the security of large language models. It takes great effort to understand the specific vulnerabilities unique to LLMs and apply established security practices, this will allow organizations to better safeguard their AI systems against emerging threats. Continuous assessment, testing, and monitoring are essential to address evolving risks and ensure robust security measures are in place.
 
