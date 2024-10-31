@@ -1,6 +1,6 @@
 # OWASP Top 10 for LLM Applications 2025 Mapped to FAIR
 
-This repo maps the vulnerabilities identified in the [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org) to the [FAIR (Factors for the Analysis of Information Risk) framework](https://www.fairinstitute.org/). The FAIR model helps analyze information security risks by providing a structured approach to understanding the potential impact and likelihood of risks related to Large Language Models (LLMs).
+This repo maps the vulnerabilities identified in the [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org) to the [FAIR (Factors for the Analysis of Information Risk) framework](https://www.fairinstitute.org/). The FAIR model helps analyze information security risks through a structured approach to understanding the potential impact and likelihood of risks related to Large Language Models (LLMs).
 
 ## FAIR Model Overview
 The FAIR model evaluates risk through two main components:
@@ -90,7 +90,7 @@ These components help contextualize LLM vulnerabilities by examining their natur
 - **FAIR Mapping**:
   - **Threat Event Frequency**: Moderate - Attackers need specific knowledge to exploit embeddings.
   - **Potential Impact**:
-    - **Operational Disruption**: Manipulation of embeddings can affect model behavior and outputs.
+    - **Operational Disruption**: Manipulation of embeddings can affect model behaviour and outputs.
     - **Security Breach**: Embedded vectors could reveal sensitive data patterns.
 - **References**:
   - [Adversarial Attacks on Embeddings](https://arxiv.org/abs/2407.07403)
@@ -116,4 +116,4 @@ These components help contextualize LLM vulnerabilities by examining their natur
 - **References**:
   - [Resource Management in AI Systems](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf)
 
-Mapping the OWASP Top 10 vulnerabilities for LLM applications to the FAIR framework is essential for understanding and mitigating risks in AI systems. By applying the FAIR Framework, organizations can assess the frequency and magnitude of potential losses, enabling them to prioritize security measures and make informed decisions to minimize vulnerabilities. This mapping also provides a structured approach to identifying key risk factors, supporting a more resilient and secure implementation of LLM technologies.
+Mapping the OWASP Top 10 vulnerabilities for LLM applications to the FAIR framework is essential for understanding and mitigating risks in AI systems. The FAIR Framework applied to organizations can assess the frequency and magnitude of potential losses, enabling them to prioritize security measures and make informed decisions to minimize vulnerabilities. This mapping also provides a structured approach to identifying key risk factors, supporting a more resilient and secure implementation of LLM technologies.
