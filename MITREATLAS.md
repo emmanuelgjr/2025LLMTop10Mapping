@@ -151,7 +151,6 @@ This repo presents a detailed mapping of the [OWASP Top 10 for LLM Applications 
 
 ---
 
-## Conclusion
-This mapping provides a critical alignment between the **OWASP Top 10 for LLM Applications 2025** and the **MITRE ATLAS** framework, supporting AI practitioners in identifying, categorizing, and mitigating security risks within LLM deployments. The combined insights from these frameworks offer a more holistic approach to managing AI security, facilitating threat-informed defence strategies that prioritize proactive measures, continuous monitoring, and robust risk management. By understanding these vulnerabilities and adopting the recommended defences, organizations can enhance the security of their AI systems, reduce potential attack surfaces, and ensure compliance with evolving security standards.
+This mapping provides a critical alignment between the OWASP Top 10 for LLM Applications 2025 and the MITRE ATLAS framework, supporting AI practitioners in identifying, categorizing, and mitigating security risks within LLM deployments. The combined insights from these frameworks offer a more holistic approach to managing AI security, facilitating threat-informed defence strategies that prioritize proactive measures, continuous monitoring, and robust risk management. After understanding these vulnerabilities and adopting the recommended defences, organizations will be able to enhance the security of their AI systems, reduce potential attack surfaces, and ensure compliance with evolving security standards.
 
 ---
