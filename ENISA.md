@@ -6,7 +6,7 @@ Additionally, it provides practical examples, mitigation timelines, severity rat
 
 | **Vulnerability**                         | **Severity Rating** | **ENISA Mapping and Description**                                                                                                                                                                                                                             | **Mitigation Techniques**                          |
 |---------------------------------------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| LLM01:2025 Prompt Injection           | High           | [ENISA AI Threat Landscape](https://www.enisa.europa.eu/topics/ai-threat-landscape): Highlights the need for secure model inputs. [ENISA Secure Development Principles](https://www.enisa.europa.eu/publications/guideline-on-software-security): Input validation. | Input filtering, adversarial testing          |
+| LLM01:2025 Prompt Injection           | High           | [ENISA AI Threat Landscape](https://www.enisa.europa.eu): Highlights the need for secure model inputs. [ENISA Secure Development Principles](https://www.enisa.europa.eu/publications/guideline-on-software-security): Input validation. | Input filtering, adversarial testing          |
 | LLM02:2025 Sensitive Information Disclosure | High      | [ENISA’s Guidelines on PII Protection](https://www.enisa.europa.eu): Emphasizes data minimization and access control. [ENISA's Secure Data Handling](https://www.enisa.europa.eu): Implements federated learning, differential privacy.                                                           | Data sanitization, access control              |
 | LLM03:2025 Supply Chain Risks         | Medium         | [ENISA Supply Chain Guidelines](https://www.enisa.europa.eu): Emphasizes third-party risk management, software bill of materials (SBOM).                                                                                                                                                          | Supply chain audits, digital signatures        |
 | LLM04:2025 Data and Model Poisoning   | High           | [ENISA AI Security](https://www.enisa.europa.eu): Recommends adversarial detection techniques and model retraining.                                                                                                                                                                                | Federated learning, adversarial training       |
@@ -36,7 +36,7 @@ Additionally, it provides practical examples, mitigation timelines, severity rat
   - **ENISA Secure Development Principles:** Recommends implementing input validation and adversarial testing.
 
 **Relevant Links:**
-- [ENISA AI Threat Landscape Overview](https://www.enisa.europa.eu/topics/ai-threat-landscape)
+- [ENISA AI Threat Landscape Overview](https://www.enisa.europa.eu)
 - [MITRE ATLAS Techniques Overview](https://atlas.mitre.org)
 
 **Mitigation Strategies:**
