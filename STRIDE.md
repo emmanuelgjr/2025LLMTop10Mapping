@@ -3,6 +3,23 @@
 This repo presents a comprehensive mapping of each vulnerability in the [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org) to the [STRIDE threat model](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats#stride-model). STRIDE categorizes threats into six types: Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privileges.
 
 
+
+| Vulnerability                       | STRIDE Categories                                |
+|-------------------------------------|--------------------------------------------------|
+| LLM01:2025 Prompt Injection    | Spoofing, Tampering, Elevation of Privileges     |
+| LLM02:2025 Sensitive Information Disclosure | Information Disclosure, Tampering       |
+| LLM03:2025 Supply Chain Risks   | Tampering, Denial of Service                     |
+| LLM04:2025 Data and Model Poisoning | Tampering, Denial of Service                 |
+| LLM05:2025 Insecure Output Handling | Information Disclosure, Tampering           |
+| LLM06:2025 Excessive Agency     | Elevation of Privileges, Denial of Service       |
+| LLM07:2025 System Prompt Leakage| Information Disclosure                           |
+| LLM08:2025 Vector and Embedding Weaknesses | Tampering, Information Disclosure        |
+| LLM09:2025 Misinformation       | Information Disclosure, Tampering                |
+| LLM10:2025 Unbounded Consumption | Denial of Service                               |
+
+
+---
+
 ### LLM01:25 Prompt Injection
 
 **Description:** User inputs manipulate LLM behaviour, bypassing safeguards, generating harmful content, or gaining unauthorized access.
