@@ -2,17 +2,20 @@
 
 This repo maps vulnerabilities from the OWASP Top 10 for LLM Applications 2025 to corresponding Common Vulnerabilities and Exposures (CVEs) and Common Weakness Enumerations (CWEs). This mapping provides insight into attack vectors, mitigation strategies, and security frameworks. We understand vulnerabilities in the wild are coming up every day, use the mapping as a reference and keep vigilant on new developments.
 
-## Table of Contents
-1. [LLM01:2025 Prompt Injection](https://genai.owasp.org/)
-2. [LLM02:2025 Sensitive Information Disclosure](https://genai.owasp.org/)
-3. [LLM03:2025 Supply Chain Vulnerabilities](https://genai.owasp.org/)
-4. [LLM04:2025 Data and Model Poisoning](https://genai.owasp.org/)
-5. [LLM05:2025 Insecure Output Handling](https://genai.owasp.org/)
-6. [LLM06:2025 Excessive Agency](https://genai.owasp.org/)
-7. [LLM07:2025 System Prompt Leakage](https://genai.owasp.org/)
-8. [LLM08:2025 Vector and Embedding Weaknesses](https://genai.owasp.org/)
-9. [LLM09:2025 Misinformation](https://genai.owasp.org/)
-10. [LLM10:2025 Unbounded Consumption](https://genai.owasp.org/)
+
+| Vulnerabilities                   | CVE                                                                 | CWE                                                                                   |
+|-----------------------------------|---------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| LLM01:2025 Prompt Injection       | [CVE-2024-5184](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-5184) | [CWE-20: Improper Input Validation](https://cwe.mitre.org/data/definitions/20.html), [CWE-94: Improper Control of Code Generation](https://cwe.mitre.org/data/definitions/94.html) |
+| LLM02:2025 Sensitive Information Disclosure | [CVE-2019-20634](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-20634) | [CWE-200: Exposure of Sensitive Information](https://cwe.mitre.org/data/definitions/200.html), [CWE-201: Insertion of Sensitive Information Into Logs](https://cwe.mitre.org/data/definitions/201.html) |
+| LLM03:2025 Supply Chain Vulnerabilities | [CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228), [CVE-2022-22965](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22965) | [CWE-506: Embedded Malicious Code](https://cwe.mitre.org/data/definitions/506.html), [CWE-119: Improper Restriction of Operations within Buffer Bounds](https://cwe.mitre.org/data/definitions/119.html) |
+| LLM04:2025 Data and Model Poisoning | None | [CWE-506: Embedded Malicious Code](https://cwe.mitre.org/data/definitions/506.html), [CWE-1021: Improper Data Validation](https://cwe.mitre.org/data/definitions/1021.html) |
+| LLM05:2025 Insecure Output Handling | [CVE-2020-8193](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8193), [CVE-2021-21234](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21234) | [CWE-79: Cross-site Scripting (XSS)](https://cwe.mitre.org/data/definitions/79.html), [CWE-116: Improper Output Encoding](https://cwe.mitre.org/data/definitions/116.html) |
+| LLM06:2025 Excessive Agency       | None | [CWE-862: Missing Authorization](https://cwe.mitre.org/data/definitions/862.html) |
+| LLM07:2025 System Prompt Leakage  | None | [CWE-209: Error Message Sensitive Information Exposure](https://cwe.mitre.org/data/definitions/209.html) |
+| LLM08:2025 Vector and Embedding Weaknesses | None | [CWE-682: Incorrect Calculation](https://cwe.mitre.org/data/definitions/682.html) |
+| LLM09:2025 Misinformation         | None | [CWE-84: Improper Neutralization of Encoded Information](https://cwe.mitre.org/data/definitions/84.html), [CWE-346: Origin Validation Error](https://cwe.mitre.org/data/definitions/346.html) |
+| LLM10:2025 Unbounded Consumption  | [CVE-2016-10033](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10033), [CVE-2018-1002105](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1002105) | [CWE-400: Uncontrolled Resource Consumption](https://cwe.mitre.org/data/definitions/400.html) |
+
 
 ## LLM01:2025 Prompt Injection
 Prompt injection occurs when malicious inputs manipulate model behaviour, bypass safety measures, or trigger unauthorized actions.
