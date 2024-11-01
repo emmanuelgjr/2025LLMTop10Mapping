@@ -4,18 +4,20 @@ This repo maps each vulnerability to relevant frameworks and controls outlined b
 
 Additionally, it provides practical examples, mitigation timelines, severity ratings, and role-specific guidance to help stakeholders prioritize and effectively manage security risks associated with LLM deployments.
 
-## Table of Contents
 
-1. [LLM01:2025 Prompt Injection](https://genai.owasp.org/)
-2. [LLM02:2025 Sensitive Information Disclosure](https://genai.owasp.org/)
-3. [LLM03:2025 Supply Chain Risks](https://genai.owasp.org/)
-4. [LLM04:2025 Data and Model Poisoning](https://genai.owasp.org/)
-5. [LLM05:2025 Insecure Output Handling](https://genai.owasp.org/)
-6. [LLM06:2025 Excessive Agency](https://genai.owasp.org/)
-7. [LLM07:2025 System Prompt Leakage](https://genai.owasp.org/)
-8. [LLM08:2025 Vector and Embedding Weaknesses](https://genai.owasp.org/)
-9. [LLM09:2025 Misinformation](https://genai.owasp.org/)
-10. [LLM10:2025 Unbounded Consumption](https://genai.owasp.org/)
+| Vulnerability                         | ENISA Mapping                                                                                                                                                     |
+|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| LLM01:2025 Prompt Injection           | ENISA AI Threat Landscape, ENISA Secure Development Principles                                                                                                    |
+| LLM02:2025 Sensitive Information Disclosure | ENISA’s Guidelines on PII Protection, ENISA's Secure Data Handling                                                                                               |
+| LLM03:2025 Supply Chain Risks         | ENISA Supply Chain Guidelines                                                                                                                                     |
+| LLM04:2025 Data and Model Poisoning   | ENISA AI Security                                                                                                                                                 |
+| LLM05:2025 Insecure Output Handling   | ENISA Output Security Recommendations                                                                                                                            |
+| LLM06:2025 Excessive Agency           | ENISA Autonomy Control Guidelines                                                                                                                                |
+| LLM07:2025 System Prompt Leakage      | ENISA Configuration Security                                                                                                                                      |
+| LLM08:2025 Vector and Embedding Weaknesses | ENISA Embedding Security                                                                                                                                         |
+| LLM09:2025 Misinformation             | ENISA’s Disinformation Mitigation                                                                                                                                |
+| LLM10:2025 Unbounded Consumption      | ENISA Resource Control                                                                                                                                           |
+
 
 ---
 
