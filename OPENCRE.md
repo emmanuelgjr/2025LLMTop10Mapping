@@ -2,17 +2,20 @@
 
 This repo mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with the [**OPENCRE (Open Common Requirement Enumeration)**](https://opencre.org/) framework, linking potential threats to appropriate mitigation measures.
 
-## Table of Contents
-1. [LLM01: Prompt Injection](https://genai.owasp.org/)
-2. [LLM02: Sensitive Information Disclosure](https://genai.owasp.org/)
-3. [LLM03: Supply Chain Risks](https://genai.owasp.org/)
-4. [LLM04: Data and Model Poisoning](https://genai.owasp.org/)
-5. [LLM05: Insecure Output Handling](https://genai.owasp.org/)
-6. [LLM06: Excessive Agency](https://genai.owasp.org/)
-7. [LLM07: System Prompt Leakage](https://genai.owasp.org/)
-8. [LLM08: Vector and Embedding Weaknesses](https://genai.owasp.org/)
-9. [LLM09: Misinformation](https://genai.owasp.org/)
-10. [LLM10: Unbounded Consumption](https://genai.owasp.org/)
+
+| **Vulnerability**                      | **OPENCRE Mappings**                                                                                   |
+|----------------------------------------|--------------------------------------------------------------------------------------------------------|
+| LLM01: Prompt Injection           | [CRE-1713: Injection Attacks](https://opencre.org/cre/1713), [CRE-1312: Input Validation](https://opencre.org/cre/1312), [CRE-1320: Command Injection](https://opencre.org/cre/1320) |
+| LLM02: Sensitive Information Disclosure | [CRE-1365: Sensitive Data Exposure](https://opencre.org/cre/1365), [CRE-1512: Access Control](https://opencre.org/cre/1512), [CRE-1320: Privacy Controls](https://opencre.org/cre/1320) |
+| LLM03: Supply Chain Risks          | [CRE-1410: Supply Chain Security](https://opencre.org/cre/1410), [CRE-1720: Software Dependency Management](https://opencre.org/cre/1720), [CRE-1335: Data Integrity](https://opencre.org/cre/1335) |
+| LLM04: Data and Model Poisoning    | [CRE-1623: Data Poisoning](https://opencre.org/cre/1623), [CRE-1335: Model Integrity](https://opencre.org/cre/1335), [CRE-1713: Adversarial Attacks](https://opencre.org/cre/1713) |
+| LLM05: Insecure Output Handling    | [CRE-1365: Output Handling](https://opencre.org/cre/1365), [CRE-1512: Response Filtering](https://opencre.org/cre/1512), [CRE-1720: Context Validation](https://opencre.org/cre/1720) |
+| LLM06: Excessive Agency            | [CRE-1625: Excessive Functionality](https://opencre.org/cre/1625), [CRE-1512: Access Control](https://opencre.org/cre/1512), [CRE-1410: Privilege Management](https://opencre.org/cre/1410) |
+| LLM07: System Prompt Leakage       | [CRE-1720: System Prompt Security](https://opencre.org/cre/1720), [CRE-1512: Data Leakage Prevention](https://opencre.org/cre/1512), [CRE-1365: Configuration Management](https://opencre.org/cre/1365) |
+| LLM08: Vector and Embedding Weaknesses | [CRE-1335: Vector Manipulation](https://opencre.org/cre/1335), [CRE-1713: Embedding Risks](https://opencre.org/cre/1713), [CRE-1320: Adversarial Attacks](https://opencre.org/cre/1320) |
+| LLM09: Misinformation              | [CRE-1410: Misinformation Control](https://opencre.org/cre/1410), [CRE-1335: Truth Verification](https://opencre.org/cre/1335), [CRE-1623: Fact-checking Mechanisms](https://opencre.org/cre/1623) |
+| LLM10: Unbounded Consumption       | [CRE-1720: Resource Management](https://opencre.org/cre/1720), [CRE-1512: Rate Limiting](https://opencre.org/cre/1512), [CRE-1365: Consumption Control](https://opencre.org/cre/1365) |
+
 
 ---
 
