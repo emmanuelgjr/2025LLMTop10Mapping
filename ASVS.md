@@ -3,18 +3,19 @@
 
 This repo provides a detailed mapping of the vulnerabilities outlined in the [OWASP Top 10 for LLM Applications: 2025](https://genai.owasp.org) to the [OWASP Application Security Verification Standard (ASVS)](https://owasp.org/ASVS/). The goal is to offer developers and security teams a comprehensive view of how to align AI-specific security measures with broader application security standards.
 
-| **LLM Vulnerability** | **Risk Level** | **ASVS Categories**                       | **Key Risks**                            | **Top Mitigation Steps**                |
-|--------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|
-| LLM01:2025 Prompt Injection | High | Input Validation and Encoding, Integrity Verification | Unauthorized access, data leakage | Strict input validation, enforce prompt integrity |
-| LLM02:2025 Sensitive Information Disclosure | High | Data Protection Requirements, Access Controls | Exposure of sensitive information | Data masking, access controls |
-| LLM03:2025 Supply Chain Vulnerabilities | Medium | Secure Deployment Requirements, Dependency Management | Malicious components, unverified dependencies | Regular audits, use of composition analysis tools |
-| LLM04:2025 Data and Model Poisoning | High | Data Validation, Machine Learning Security | Compromised training data, incorrect outputs | Data audits, secure data pipelines |
-| LLM05:2025 Insecure Output Handling | Medium | Output Encoding and Escaping, Secure Processing of Outputs | Data leakage, injection vulnerabilities | Output filtering, output format definitions |
-| LLM06:2025 Excessive Agency | Medium | Least Privilege Access, Automated Actions | Unintended autonomous actions | Enforce least privilege, human approval for high-risk actions |
-| LLM07:2025 System Prompt Leakage | Medium | Information Leakage, Secrets Management | System prompt exposure | Conceal system prompts, implement secure configuration practices |
-| LLM08:2025 Vector and Embedding Weaknesses | Medium | Data Validation and Cleansing, AI Security | Biased or malicious outputs | Adversarial testing, secure vector databases |
-| LLM09:2025 Misinformation | Medium | Data Quality Assurance, Model Performance Validation | Inaccurate or misleading content | Cross-verification, human oversight |
-| LLM10:2025 Unbounded Consumption | Low | Denial of Service Protection, AI Resource Management | Excessive resource usage, denial of service | Rate-limiting, load balancing   |
+| **Vulnerability**                         | **Risk Level** | **ASVS Categories**                                  | **Key Risks**                              | **Top Mitigation Steps**                                |
+|-------------------------------------------|------------|--------------------------------------------------|----------------------------------------|-----------------------------------------------------|
+| LLM01:2025 Prompt Injection           | High       | Input Validation and Encoding, Integrity Verification | Unauthorized access, data leakage      | Strict input validation, enforce prompt integrity    |
+| LLM02:2025 Sensitive Information Disclosure | High       | Data Protection Requirements, Access Controls     | Exposure of sensitive information      | Data masking, access controls                       |
+| LLM03:2025 Supply Chain Vulnerabilities | Medium     | Secure Deployment Requirements, Dependency Management | Malicious components, unverified dependencies | Regular audits, use of composition analysis tools   |
+| LLM04:2025 Data and Model Poisoning   | High       | Data Validation, Machine Learning Security       | Compromised training data, incorrect outputs | Data audits, secure data pipelines                  |
+| LLM05:2025 Insecure Output Handling   | Medium     | Output Encoding and Escaping, Secure Processing of Outputs | Data leakage, injection vulnerabilities | Output filtering, output format definitions         |
+| LLM06:2025 Excessive Agency           | Medium     | Least Privilege Access, Automated Actions        | Unintended autonomous actions          | Enforce least privilege, human approval for high-risk actions |
+| LLM07:2025 System Prompt Leakage      | Medium     | Information Leakage, Secrets Management          | System prompt exposure                 | Conceal system prompts, implement secure configuration practices |
+| LLM08:2025 Vector and Embedding Weaknesses | Medium     | Data Validation and Cleansing, AI Security       | Biased or malicious outputs            | Adversarial testing, secure vector databases         |
+| LLM09:2025 Misinformation             | Medium     | Data Quality Assurance, Model Performance Validation | Inaccurate or misleading content      | Cross-verification, human oversight                  |
+| LLM10:2025 Unbounded Consumption      | Low        | Denial of Service Protection, AI Resource Management | Excessive resource usage, denial of service | Rate-limiting, load balancing                       |
+
 
 ---
 
