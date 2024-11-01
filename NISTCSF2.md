@@ -48,7 +48,7 @@ The [OWASP Top 10 for LLM Applications](https://genai.owasp.org) is a guide desi
 
 The following sections provide detailed mappings of each vulnerability from the OWASP Top 10 for LLM Applications (2025) to the appropriate functions, categories, and subcategories within NIST CSF 2.0.
 
-### [LLM01:2025 - Prompt Injection](https://genai.owasp.org)
+## [LLM01:2025 - Prompt Injection](https://genai.owasp.org)
 
 - **Description**: Prompt Injection occurs when user inputs manipulate the model's behaviour in unintended ways, potentially leading to unauthorized access, content manipulation, or security breaches.
 - **NIST CSF Mapping**:
@@ -63,7 +63,7 @@ The following sections provide detailed mappings of each vulnerability from the 
     - **RS.AN-4**: Analyze incident data to assess the impact of prompt injection attacks on the organization.
 
 
-### [LLM02:2025 - Sensitive Information Disclosure](https://genai.owasp.org)
+## [LLM02:2025 - Sensitive Information Disclosure](https://genai.owasp.org)
 
 - **Description**: Unintentional disclosure of sensitive data through model outputs, including Personally Identifiable Information (PII), proprietary data, or confidential information.
 - **NIST CSF Mapping**:
@@ -78,7 +78,7 @@ The following sections provide detailed mappings of each vulnerability from the 
     - **RS.MI-2**: Mitigate incidents of sensitive information disclosure according to established procedures.
 
 
-### [LLM03:2025 - Supply Chain Risks](https://genai.owasp.org)
+## [LLM03:2025 - Supply Chain Risks](https://genai.owasp.org)
 
 - **Description**: Risks arising from third-party components or dependencies in the model's supply chain, which could compromise integrity or introduce vulnerabilities.
 - **NIST CSF Mapping**:
@@ -93,7 +93,7 @@ The following sections provide detailed mappings of each vulnerability from the 
 
 
 
-### [LLM04:2025 - Data and Model Poisoning](https://genai.owasp.org)
+## [LLM04:2025 - Data and Model Poisoning](https://genai.owasp.org)
 
 - **Description**: Attacks that compromise data or models by injecting malicious inputs during training, leading to biased or manipulated outputs.
 - **NIST CSF Mapping**:
@@ -107,7 +107,7 @@ The following sections provide detailed mappings of each vulnerability from the 
     - **RS.MI-3**: Mitigate newly identified vulnerabilities arising from data and model poisoning.
 
 
-### [LLM05:2025 - Insecure Output Handling](https://genai.owasp.org)
+## [LLM05:2025 - Insecure Output Handling](https://genai.owasp.org)
 
 - **Description**: Improper handling of generated content that could lead to security issues, such as harmful data being displayed to users.
 - **NIST CSF Mapping**:
@@ -119,7 +119,7 @@ The following sections provide detailed mappings of each vulnerability from the 
     - **RS.CO-2**: Coordinate activities with stakeholders during and after an incident involving insecure output.
 
 
-### [LLM06:2025 - Excessive Agency](https://genai.owasp.org)
+## [LLM06:2025 - Excessive Agency](https://genai.owasp.org)
 
 - **Description**: The model's excessive autonomy may lead to unintended consequences, such as executing unauthorized actions.
 - **NIST CSF Mapping**:
@@ -131,7 +131,7 @@ The following sections provide detailed mappings of each vulnerability from the 
     - **RS.MI-1**: Follow incident handling processes to mitigate risks associated with excessive agency.
 
 
-### [LLM07:2025 - System Prompt Leakage](https://genai.owasp.org)
+## [LLM07:2025 - System Prompt Leakage](https://genai.owasp.org)
 
 - **Description**: Leakage of system-level prompts or instructions that could compromise the integrity or confidentiality of the model.
 - **NIST CSF Mapping**:
@@ -143,7 +143,7 @@ The following sections provide detailed mappings of each vulnerability from the 
     - **RS.MI-4**: Use continuous monitoring capabilities to detect anomalies related to prompt leakage.
 
 
-### [LLM08:2025 - Vector and Embedding Weaknesses](https://genai.owasp.org)
+## [LLM08:2025 - Vector and Embedding Weaknesses](https://genai.owasp.org)
 
 - **Description**: Exploitable weaknesses in vectors and embeddings, which could be manipulated to produce misleading results.
 - **NIST CSF Mapping**:
@@ -156,7 +156,7 @@ The following sections provide detailed mappings of each vulnerability from the 
 
 
 
-### [LLM09:2025 - Misinformation](https://genai.owasp.org)
+## [LLM09:2025 - Misinformation](https://genai.owasp.org)
 
 - **Description**: The generation of inaccurate, misleading, or false information that could impact decisions, credibility, or security.
 - **NIST CSF Mapping**:
@@ -168,7 +168,7 @@ The following sections provide detailed mappings of each vulnerability from the 
     - **RS.CO-4**: Coordinate with stakeholders to manage the response to misinformation incidents.
 
 
-### [LLM10:2025 - Unbounded Consumption](https://genai.owasp.org)
+## [LLM10:2025 - Unbounded Consumption](https://genai.owasp.org)
 
 - **Description**: Uncontrolled consumption of resources by the model, leading to denial of service or other availability impacts.
 - **NIST CSF Mapping**:
