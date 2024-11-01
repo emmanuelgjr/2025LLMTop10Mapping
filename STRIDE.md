@@ -18,6 +18,17 @@ This repo presents a comprehensive mapping of each vulnerability in the [OWASP T
 | LLM10:2025 Unbounded Consumption | Denial of Service                               |
 
 
+
+| **STRIDE Category**                | **Meaning**                  | **LLM Vulnerabilities**                                      |
+|------------------------------------|------------------------------|--------------------------------------------------------------|
+| **S - Spoofing**                   | Impersonation of identity    | LLM01:2025 Prompt Injection                                  |
+| **T - Tampering**                  | Data or code modification    | LLM01:2025 Prompt Injection, LLM02:2025 Sensitive Information Disclosure, LLM03:2025 Supply Chain Risks, LLM04:2025 Data and Model Poisoning, LLM05:2025 Insecure Output Handling, LLM08:2025 Vector and Embedding Weaknesses, LLM09:2025 Misinformation |
+| **R - Repudiation**                | Denial of action or origin   | _(None in OWASP Top 10 for LLMs)_                            |
+| **I - Information Disclosure**     | Exposure of sensitive data   | LLM02:2025 Sensitive Information Disclosure, LLM05:2025 Insecure Output Handling, LLM07:2025 System Prompt Leakage, LLM08:2025 Vector and Embedding Weaknesses, LLM09:2025 Misinformation |
+| **D - Denial of Service**          | Resource exhaustion or blocking | LLM03:2025 Supply Chain Risks, LLM04:2025 Data and Model Poisoning, LLM06:2025 Excessive Agency, LLM10:2025 Unbounded Consumption |
+| **E - Elevation of Privileges**    | Unauthorized privilege gain  | LLM01:2025 Prompt Injection, LLM06:2025 Excessive Agency     |
+
+
 ---
 
 ### LLM01:25 Prompt Injection
