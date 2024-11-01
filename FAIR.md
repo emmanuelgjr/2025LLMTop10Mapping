@@ -10,6 +10,23 @@ The FAIR model evaluates risk through two main components:
 These components help contextualize LLM vulnerabilities by examining their nature, controls, and consequences.
 
 
+# Vulnerabilities and FAIR Mapping Table
+
+| **Vulnerability**                | **FAIR Mapping**                                                                                                                                                                  |
+|----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| LLM01:2025 Prompt Injection  | **TEF**: High - Prompt injections are easy to attempt. <br> **Vulnerability**: High susceptibility due to reliance on external inputs. <br> **Loss Factors**: Productivity loss, response cost. |
+| LLM02:2025 Sensitive Information Disclosure | **Control Strength**: Moderate to Weak - Depending on safeguards. <br> **Potential Loss**: Confidentiality breach, fines, and penalties.                                         |
+| LLM03:2025 Supply Chain Vulnerabilities     | **Threat Capability**: High - Exploitation of dependencies. <br> **Potential Impact**: Reputation damage, productivity loss.                                                     |
+| LLM04:2025 Data and Model Poisoning         | **Control Strength**: Weak - Hard to detect and mitigate. <br> **Loss Factors**: Competitive disadvantage, recovery costs.                                                       |
+| LLM05:2025 Insecure Output Handling         | **TEF**: Moderate - Lack of rigorous output filters. <br> **Potential Impact**: Confidentiality breach, operational disruption.                                                   |
+| LLM06:2025 Excessive Agency                 | **Vulnerability**: High - Unintended actions by autonomous LLMs. <br> **Potential Impact**: Operational risk, safety risk.                                                       |
+| LLM07:2025 System Prompt Leakage            | **Control Strength**: Moderate - Strong configurations, but bypassable. <br> **Loss Factors**: Confidentiality breach, legal consequences.                                      |
+| LLM08:2025 Vector and Embedding Weaknesses  | **TEF**: Moderate - Requires specific knowledge. <br> **Potential Impact**: Operational disruption, security breach.                                                              |
+| LLM09:2025 Misinformation Generation        | **Control Strength**: Weak - Difficult to detect. <br> **Potential Loss**: Reputation damage, compliance issues.                                                                 |
+| LLM10:2025 Unbounded Consumption            | **Threat Capability**: High - If resource limits are not enforced. <br> **Potential Impact**: Service downtime, operational costs.                                              |
+
+
+
 ## LLM01:2025 Prompt Injection
 - **Description**: Manipulation of model behaviour via crafted inputs.
 - **FAIR Mapping**:
