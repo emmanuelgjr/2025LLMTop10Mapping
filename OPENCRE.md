@@ -19,7 +19,7 @@ This repo mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with
 
 ---
 
-## 1. [LLM01:2025 Prompt Injection](https://genai.owasp.org)
+## [LLM01:2025 Prompt Injection](https://genai.owasp.org)
 
 - **Description:** Occurs when crafted inputs alter LLM behaviour or outputs, bypassing safety measures and enabling unauthorized actions.
 - **Impact:** Unauthorized data access, sensitive information exposure, and biased decision-making.
@@ -35,7 +35,7 @@ This repo mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with
 
 ---
 
-## 2. [LLM02:2025 Sensitive Information Disclosure](https://genai.owasp.org)
+## [LLM02:2025 Sensitive Information Disclosure](https://genai.owasp.org)
 
 - **Description:** The model may expose sensitive data, including PII, business secrets, or proprietary algorithms.
 - **Impact:** Data leaks, privacy violations, and IP breaches.
@@ -51,7 +51,7 @@ This repo mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with
 
 ---
 
-## 3. [LLM03:2025 Supply Chain Risks](https://genai.owasp.org)
+## [LLM03:2025 Supply Chain Risks](https://genai.owasp.org)
 
 - **Description:** Vulnerabilities from third-party components, data sources, or model dependencies.
 - **Impact:** Compromise of data integrity, injection of malicious data, and cascading failures.
@@ -66,7 +66,7 @@ This repo mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with
 
 ---
 
-## 4. [LLM04:2025 Data and Model Poisoning](https://genai.owasp.org)
+## [LLM04:2025 Data and Model Poisoning](https://genai.owasp.org)
 
 - **Description:** Altered training data or model parameters, causing incorrect outputs or malicious behaviour.
 - **Impact:** Deceptive responses, compromised decision-making, and model degradation.
@@ -81,7 +81,7 @@ This repo mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with
 
 ---
 
-## 5. [LLM05:2025 Insecure Output Handling](https://genai.owasp.org)
+## [LLM05:2025 Insecure Output Handling](https://genai.owasp.org)
 
 - **Description:** Outputs not properly sanitized may lead to unauthorized disclosures or actions.
 - **Impact:** Data leakage, unintended command execution, or policy violations.
@@ -96,7 +96,7 @@ This repo mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with
 
 ---
 
-## 6. [LLM06:2025 Excessive Agency](https://genai.owasp.org)
+## [LLM06:2025 Excessive Agency](https://genai.owasp.org)
 
 - **Description:** LLMs executing privileged actions beyond the intended scope.
 - **Impact:** Unauthorized access, security breaches, and operational disruptions.
@@ -111,7 +111,7 @@ This repo mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with
 
 ---
 
-## 7. [LLM07:2025 System Prompt Leakage](https://genai.owasp.org)
+## [LLM07:2025 System Prompt Leakage](https://genai.owasp.org)
 
 - **Description:** Exposure of internal prompts or configurations, leading to potential exploits.
 - **Impact:** System configuration leaks, unauthorized access, or privilege escalation.
@@ -126,7 +126,7 @@ This repo mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with
 
 ---
 
-## 8. [LLM08:2025 Vector and Embedding Weaknesses](https://genai.owasp.org)
+## [LLM08:2025 Vector and Embedding Weaknesses](https://genai.owasp.org)
 
 - **Description:** Flaws in embeddings or vector representations may lead to inaccurate responses or vulnerabilities.
 - **Impact:** Malicious embedding attacks, vector manipulation, and bias introduction.
@@ -141,7 +141,7 @@ This repo mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with
 
 ---
 
-## 9. [LLM09:2025 Misinformation](https://genai.owasp.org)
+## [LLM09:2025 Misinformation](https://genai.owasp.org)
 
 - **Description:** LLMs generating false or misleading information.
 - **Impact:** Spread of misinformation, credibility loss, and incorrect decision-making.
@@ -156,7 +156,7 @@ This repo mapping aligns the OWASP Top 10 for LLM Apps 2025 vulnerabilities with
 
 ---
 
-## 10. [LLM10:2025 Unbounded Consumption](https://genai.owasp.org)
+## [LLM10:2025 Unbounded Consumption](https://genai.owasp.org)
 
 - **Description:** LLMs consuming excessive resources, leading to performance issues or denial-of-service.
 - **Impact:** Resource exhaustion, slow response times, or service outages.
