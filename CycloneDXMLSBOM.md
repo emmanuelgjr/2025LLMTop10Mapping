@@ -1,6 +1,6 @@
 # OWASP Top 10 for LLM Applications 2025 Mapped to CycloneDX ML SBOM
 
-This repo mapped vulnerabilities from the [OWASP Top 10 for Large Language Model Applications 2025](https://genai.owasp.org) to the [CycloneDX Machine Learning Software Bill of Materials (ML SBOM)](https://cyclonedx.org/). The purpose is to enhance the security, transparency, and integrity of LLM-based systems through a structured ML SBOM.
+This repo mapped vulnerabilities from the [OWASP Top 10 for Large Language Model Applications 2025](https://genai.owasp.org) to the [CycloneDX Machine Learning Software Bill of Materials (ML SBOM)](https://cyclonedx.org/capabilities/mlbom/). The purpose is to enhance the security, transparency, and integrity of LLM-based systems through a structured ML SBOM.
 
 | **Vulnerabilities**                                | **Risk Rating** | **CycloneDX ML SBOM**                                                                                                                                                         | **Suggested Tools**                             |
 |------------------------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
