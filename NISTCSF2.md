@@ -48,6 +48,8 @@ The [OWASP Top 10 for LLM Applications](https://genai.owasp.org) is a guide desi
 
 The following sections provide detailed mappings of each vulnerability from the OWASP Top 10 for LLM Applications (2025) to the appropriate functions, categories, and subcategories within NIST CSF 2.0.
 
+---
+
 ## [LLM01:2025 - Prompt Injection](https://genai.owasp.org)
 
 - **Description**: Prompt Injection occurs when user inputs manipulate the model's behaviour in unintended ways, potentially leading to unauthorized access, content manipulation, or security breaches.
@@ -62,6 +64,7 @@ The following sections provide detailed mappings of each vulnerability from the 
   - **Respond (RS)**:
     - **RS.AN-4**: Analyze incident data to assess the impact of prompt injection attacks on the organization.
 
+---
 
 ## [LLM02:2025 - Sensitive Information Disclosure](https://genai.owasp.org)
 
@@ -77,6 +80,7 @@ The following sections provide detailed mappings of each vulnerability from the 
   - **Respond (RS)**:
     - **RS.MI-2**: Mitigate incidents of sensitive information disclosure according to established procedures.
 
+---
 
 ## [LLM03:2025 - Supply Chain Risks](https://genai.owasp.org)
 
@@ -91,7 +95,7 @@ The following sections provide detailed mappings of each vulnerability from the 
   - **Respond (RS)**:
     - **RS.AN-5**: Establish processes to receive, analyze, and respond to supply chain threats.
 
-
+---
 
 ## [LLM04:2025 - Data and Model Poisoning](https://genai.owasp.org)
 
@@ -106,6 +110,7 @@ The following sections provide detailed mappings of each vulnerability from the 
   - **Respond (RS)**:
     - **RS.MI-3**: Mitigate newly identified vulnerabilities arising from data and model poisoning.
 
+---
 
 ## [LLM05:2025 - Insecure Output Handling](https://genai.owasp.org)
 
@@ -118,6 +123,7 @@ The following sections provide detailed mappings of each vulnerability from the 
   - **Respond (RS)**:
     - **RS.CO-2**: Coordinate activities with stakeholders during and after an incident involving insecure output.
 
+---
 
 ## [LLM06:2025 - Excessive Agency](https://genai.owasp.org)
 
@@ -130,6 +136,7 @@ The following sections provide detailed mappings of each vulnerability from the 
   - **Respond (RS)**:
     - **RS.MI-1**: Follow incident handling processes to mitigate risks associated with excessive agency.
 
+---
 
 ## [LLM07:2025 - System Prompt Leakage](https://genai.owasp.org)
 
@@ -142,6 +149,7 @@ The following sections provide detailed mappings of each vulnerability from the 
   - **Respond (RS)**:
     - **RS.MI-4**: Use continuous monitoring capabilities to detect anomalies related to prompt leakage.
 
+---
 
 ## [LLM08:2025 - Vector and Embedding Weaknesses](https://genai.owasp.org)
 
@@ -154,7 +162,7 @@ The following sections provide detailed mappings of each vulnerability from the 
   - **Respond (RS)**:
     - **RS.RP-1**: Regularly conduct response planning and update activities to mitigate vector weaknesses.
 
-
+---
 
 ## [LLM09:2025 - Misinformation](https://genai.owasp.org)
 
@@ -167,6 +175,7 @@ The following sections provide detailed mappings of each vulnerability from the 
   - **Respond (RS)**:
     - **RS.CO-4**: Coordinate with stakeholders to manage the response to misinformation incidents.
 
+---
 
 ## [LLM10:2025 - Unbounded Consumption](https://genai.owasp.org)
 
@@ -179,7 +188,7 @@ The following sections provide detailed mappings of each vulnerability from the 
   - **Respond (RS)**:
     - **RS.MI-5**: Establish procedures to limit resource consumption and mitigate denial of service risks.
 
-
+---
 
 Mapping the OWASP Top 10 for LLM Applications 2025 to the NIST Cybersecurity Framework helps organizations integrate LLM-specific risks into their broader cybersecurity strategy, ensuring a comprehensive approach to securing AI-driven applications. Organizations are encouraged to assess their systems against these vulnerabilities and apply appropriate NIST CSF controls to enhance their security posture.
 
