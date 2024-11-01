@@ -2,18 +2,46 @@
 
 This repo provides a comprehensive mapping of each vulnerability from the OWASP Top 10 for LLM Applications 2025 to the corresponding categories, subcategories, and functions in the NIST Cybersecurity Framework (CSF) 2.0.
 
-## Table of Contents
 
-- [LLM01:2025 - Prompt Injection](https://genai.owasp.org/)
-- [LLM02:2025 - Sensitive Information Disclosure](https://genai.owasp.org/)
-- [LLM03:2025 - Supply Chain Risks](https://genai.owasp.org/)
-- [LLM04:2025 - Data and Model Poisoning](https://genai.owasp.org/)
-- [LLM05:2025 - Insecure Output Handling](https://genai.owasp.org/)
-- [LLM06:2025 - Excessive Agency](https://genai.owasp.org/)
-- [LLM07:2025 - System Prompt Leakage](https://genai.owasp.org/)
-- [LLM08:2025 - Vector and Embedding Weaknesses](https://genai.owasp.org/)
-- [LLM09:2025 - Misinformation](https://genai.owasp.org/)
-- [LLM10:2025 - Unbounded Consumption](https://genai.owasp.org/)
+| **Vulnerability**                    | **NIST CSF Function** | **NIST CSF Category**       | **NIST CSF Subcategory**                                           |
+|--------------------------------------|------------------------|-----------------------------|---------------------------------------------------------------------|
+| **LLM01:2025 - Prompt Injection**    | Identify (ID)         | Asset Management            | ID.AM-5: Resources prioritized based on criticality                 |
+|                                      | Protect (PR)          | Access Control              | PR.AC-5: Network integrity controls                                 |
+|                                      | Protect (PR)          | Data Security               | PR.DS-1: Protect data-at-rest                                       |
+|                                      | Detect (DE)           | Anomalies and Events        | DE.AE-5: Aggregate and correlate event data                         |
+|                                      | Respond (RS)          | Analysis                    | RS.AN-4: Analyze incident data                                      |
+| **LLM02:2025 - Sensitive Information Disclosure** | Identify (ID)      | Governance                 | ID.GV-3: Establish governance processes                             |
+|                                      | Protect (PR)          | Data Security               | PR.DS-3: Manage assets throughout lifecycle                         |
+|                                      | Protect (PR)          | Protective Technology       | PR.PT-1: Implement security technologies                            |
+|                                      | Detect (DE)           | Security Continuous Monitoring | DE.CM-1: Monitor network activity                              |
+|                                      | Respond (RS)          | Mitigation                  | RS.MI-2: Mitigate incidents of sensitive disclosure                 |
+| **LLM03:2025 - Supply Chain Risks**  | Identify (ID)         | Business Environment        | ID.BE-5: Supply chain risk management                               |
+|                                      | Protect (PR)          | Data Security               | PR.DS-6: Integrity checking mechanisms                              |
+|                                      | Detect (DE)           | Security Continuous Monitoring | DE.CM-7: Monitor for unauthorized components                   |
+|                                      | Respond (RS)          | Analysis                    | RS.AN-5: Respond to supply chain threats                            |
+| **LLM04:2025 - Data and Model Poisoning** | Identify (ID)      | Risk Assessment            | ID.RA-3: Include scenarios involving poisoning                      |
+|                                      | Protect (PR)          | Data Security               | PR.DS-8: Maintain data integrity                                    |
+|                                      | Detect (DE)           | Detection Processes         | DE.DP-3: Analyze notifications                                      |
+|                                      | Respond (RS)          | Mitigation                  | RS.MI-3: Mitigate newly identified vulnerabilities                  |
+| **LLM05:2025 - Insecure Output Handling** | Protect (PR)        | Data Security               | PR.DS-5: Protections against data leaks                             |
+|                                      | Detect (DE)           | Security Continuous Monitoring | DE.CM-3: Monitor personnel activity                             |
+|                                      | Respond (RS)          | Communications              | RS.CO-2: Coordinate with stakeholders                               |
+| **LLM06:2025 - Excessive Agency**    | Identify (ID)         | Asset Management            | ID.AM-1: Identify physical devices and systems                      |
+|                                      | Protect (PR)          | Access Control              | PR.AC-1: Manage identities and credentials                          |
+|                                      | Respond (RS)          | Mitigation                  | RS.MI-1: Follow incident handling processes                         |
+| **LLM07:2025 - System Prompt Leakage** | Protect (PR)        | Data Security               | PR.DS-4: Protect data-in-transit                                    |
+|                                      | Detect (DE)           | Security Continuous Monitoring | DE.CM-6: Monitor external service activity                      |
+|                                      | Respond (RS)          | Mitigation                  | RS.MI-4: Continuous monitoring for anomalies                        |
+| **LLM08:2025 - Vector and Embedding Weaknesses** | Protect (PR)      | Data Security               | PR.DS-7: Protect data authenticity                                  |
+|                                      | Detect (DE)           | Detection Processes         | DE.DP-2: Assess data protection techniques                          |
+|                                      | Respond (RS)          | Response Planning           | RS.RP-1: Conduct response planning                                  |
+| **LLM09:2025 - Misinformation**      | Identify (ID)         | Risk Assessment             | ID.RA-5: Update risk assessments                                    |
+|                                      | Detect (DE)           | Security Continuous Monitoring | DE.CM-8: Vulnerability scanning                                |
+|                                      | Respond (RS)          | Communications              | RS.CO-4: Coordinate response                                        |
+| **LLM10:2025 - Unbounded Consumption** | Protect (PR)        | Information Protection      | PR.IP-1: Network security protections                               |
+|                                      | Detect (DE)           | Security Continuous Monitoring | DE.CM-4: Detect malicious code                                 |
+|                                      | Respond (RS)          | Mitigation                  | RS.MI-5: Limit resource consumption                                 |
+
 
 
 The [OWASP Top 10 for LLM Applications](https://genai.owasp.org) is a guide designed to help developers, security teams, and stakeholders understand the security risks associated with deploying Large Language Models (LLMs). These vulnerabilities are mapped to the [NIST CSF 2.0](https://www.nist.gov/cyberframework), we aim to integrate these risks into a widely recognized security framework, facilitating better risk management and response.
