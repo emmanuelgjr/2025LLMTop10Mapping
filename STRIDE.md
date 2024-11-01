@@ -2,7 +2,6 @@
 
 This repo presents a comprehensive mapping of each vulnerability in the [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org) to the [STRIDE threat model](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats#stride-model). STRIDE categorizes threats into six types: Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privileges.
 
-## Vulnerability Mapping
 
 ### LLM01:25 Prompt Injection
 
