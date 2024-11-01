@@ -2,26 +2,26 @@
 
 This repo mapped vulnerabilities from the [OWASP Top 10 for Large Language Model Applications 2025](https://genai.owasp.org) to the [CycloneDX Machine Learning Software Bill of Materials (ML SBOM)](https://cyclonedx.org/). The purpose is to enhance the security, transparency, and integrity of LLM-based systems through a structured ML SBOM.
 
-| **Vulnerabilities**                      | **CycloneDX ML SBOM**                                                                                                                                                        |
-|------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **LLM01:2025 - Prompt Injection**        | - Component Metadata: Details of prompt handlers and filters <br> - Data Sources & Inputs: Input handling mechanisms <br> - Security Testing: Coverage in SBOM               |
-| **LLM02:2025 - Sensitive Information Disclosure** | - Data Lineage: Sensitive data sources and access controls <br> - Privacy Controls: Document privacy mechanisms <br> - Access Restrictions: Component access control configs |
-| **LLM03:2025 - Supply Chain Risks**      | - Dependency Inventory: List of external dependencies <br> - Provenance Verification: Cryptographic signatures <br> - Component Risks: Known vulnerabilities and licenses   |
-| **LLM04:2025 - Data and Model Poisoning**| - Training Data Records: Sources and validation of training data <br> - Model Integrity: Fine-tuning validation <br> - Testing Artifacts: Adversarial testing in SBOM       |
-| **LLM05:2025 - Insecure Output Handling**| - Output Validation Mechanisms: Sanitization and encoding methods <br> - Response Filtering: Filtering unsafe outputs <br> - Security Testing: Output validation routines    |
-| **LLM06:2025 - Excessive Agency**        | - Component Permissions: Permissions of LLM components <br> - Access Controls: Least-privilege settings <br> - Audit Mechanisms: Logs and RBAC configurations               |
-| **LLM07:2025 - System Prompt Leakage**   | - Prompt Handling Details: Access restrictions and masking <br> - Access Controls for Prompts: Storage and sanitization methods <br> - Testing Artifacts: Prompt exposure tests |
-| **LLM08:2025 - Vector and Embedding Weaknesses** | - Embedding Mechanisms: Document vectorization and vulnerabilities <br> - Adversarial Testing Results: Detection methods <br> - Anomaly Detection: Monitor vector integrity  |
-| **LLM09:2025 - Misinformation**          | - Output Validation Methods: Cross-verification and oversight <br> - Misinformation Filtering: Detection techniques <br> - Human Oversight: Review procedures in SBOM       |
-| **LLM10:2025 - Unbounded Consumption**   | - Resource Constraints: Memory and processing limits <br> - Performance Monitoring: Tools tracking usage <br> - Rate-Limiting Details: DoS prevention measures             |
+| **Vulnerabilities**                                | **Risk Rating** | **CycloneDX ML SBOM**                                                                                                                                                         | **Suggested Tools**                             |
+|------------------------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
+| LLM01:2025 - Prompt Injection                  | High            | **Component Metadata**: Track prompt handlers and filters <br> **Data Sources & Inputs**: Validate user inputs <br> **Security Testing**: Include injection test cases       | SecML, TextAttack                              |
+| LLM02:2025 - Sensitive Information Disclosure  | High            | **Data Lineage**: Document sensitive data and access controls <br> **Privacy Controls**: List masking or differential privacy <br> **Access Restrictions**: Access configs  | Amazon Macie, BigID                            |
+| LLM03:2025 - Supply Chain Risks                | Medium          | **Dependency Inventory**: List external dependencies and libraries <br> **Provenance Verification**: Use cryptographic signatures <br> **Component Risks**: Identify issues | OWASP Dependency-Check, Snyk                   |
+| LLM04:2025 - Data and Model Poisoning          | High            | **Training Data Records**: Document data sources <br> **Model Integrity**: Validate against poisoning attempts <br> **Testing Artifacts**: Include adversarial tests         | IBM Adversarial Robustness Toolbox, SecML      |
+| LLM05:2025 - Insecure Output Handling          | Medium          | **Output Validation**: Detail output sanitization routines <br> **Response Filtering**: Filter for unsafe responses <br> **Security Testing**: Test for safe responses       | Veracode, OWASP ZAP                            |
+| LLM06:2025 - Excessive Agency                  | High            | **Component Permissions**: Track permissions <br> **Access Controls**: Apply least-privilege principles <br> **Audit Mechanisms**: Add RBAC and access logs                 | AWS IAM Access Analyzer, Okta                  |
+| LLM07:2025 - System Prompt Leakage             | Medium          | **Prompt Handling**: Mask and restrict prompt access <br> **Access Controls**: Limit prompt exposure <br> **Testing**: Test for prompt leakage scenarios                    | Veracode, Burp Suite                           |
+| LLM08:2025 - Vector and Embedding Weaknesses   | Medium          | **Embedding Mechanisms**: Track vectorization methods <br> **Adversarial Testing**: Document anomaly detection <br> **Integrity Monitoring**: Monitor embedding behavior    | CleverHans, IBM Adversarial Robustness Toolbox |
+| LLM09:2025 - Misinformation                    | High            | **Output Verification**: Implement cross-verification and review <br> **Filtering**: Detect and filter misinformation <br> **Oversight**: Include human review              | Google Fact Check API, MisinfoMe               |
+| LLM10:2025 - Unbounded Consumption             | Medium          | **Resource Limits**: Document memory and processing limits <br> **Performance Monitoring**: Track resource use <br> **Rate-Limiting**: Configure limits to prevent DoS      | Prometheus, Grafana                            |
 
 
 ---
 
-## 1. [LLM01:2025 - Prompt Injection](https://genai.owasp.org/llm01)
+## 1. [LLM01:2025 - Prompt Injection](https://genai.owasp.org/)
 
 > **Description**  
-> **Prompt Injection** occurs when malicious user inputs manipulate the behavior or output of an LLM in unexpected ways. Attackers can craft inputs that bypass filters, modify responses, or exploit weaknesses in prompt processing logic. This vulnerability can lead to unauthorized actions, the generation of harmful content, exposure of sensitive information, or biased decision-making.
+> **Prompt Injection** occurs when malicious user inputs manipulate the behaviour or output of an LLM in unexpected ways. Attackers can craft inputs that bypass filters, modify responses, or exploit weaknesses in prompt processing logic. This vulnerability can lead to unauthorized actions, the generation of harmful content, exposure of sensitive information, or biased decision-making.
 
 ### CycloneDX SBOM Mapping
 - **Component Metadata**: Capture details of prompt handling components, including software versions, prompt templates, and input validation mechanisms.
@@ -31,7 +31,7 @@ This repo mapped vulnerabilities from the [OWASP Top 10 for Large Language Model
 ### Mitigation Strategies
 - Implement **robust data sanitization** and **validation** checks for all user inputs.
 - Define **input handling configurations** in the SBOM, including filtering rules, test coverage, and sanitization routines.
-- Use **contextual encoding** to ensure inputs are correctly processed without altering the prompt's intended behavior.
+- Use **contextual encoding** to ensure inputs are correctly processed without altering the prompt's intended behaviour.
 - Integrate **testing tools** that simulate prompt injection attempts and document their results within the SBOM.
 
 ### Reference Links
@@ -41,7 +41,7 @@ This repo mapped vulnerabilities from the [OWASP Top 10 for Large Language Model
 
 ---
 
-## 2. [LLM02:2025 - Sensitive Information Disclosure](https://genai.owasp.org/llm02)
+## 2. [LLM02:2025 - Sensitive Information Disclosure](https://genai.owasp.org/)
 
 > **Description**  
 > **Sensitive Information Disclosure** occurs when Personally Identifiable Information (PII), financial data, proprietary information, or other sensitive details are unintentionally exposed through LLM responses. This can result from inadequate data handling, poor access controls, or flawed response generation logic.
@@ -63,7 +63,7 @@ This repo mapped vulnerabilities from the [OWASP Top 10 for Large Language Model
 
 ---
 
-## 3. [LLM03:2025 - Supply Chain Risks](https://genai.owasp.org/llm03)
+## 3. [LLM03:2025 - Supply Chain Risks](https://genai.owasp.org/)
 
 > **Description**  
 > **Supply Chain Risks** involve vulnerabilities introduced by third-party libraries, models, datasets, or dependencies used in LLM development. Malicious or compromised components in the supply chain can degrade system integrity, introduce backdoors, or expose sensitive data.
@@ -84,14 +84,14 @@ This repo mapped vulnerabilities from the [OWASP Top 10 for Large Language Model
 
 ---
 
-## 4. [LLM04:2025 - Data and Model Poisoning](https://genai.owasp.org/llm04)
+## 4. [LLM04:2025 - Data and Model Poisoning](https://genai.owasp.org/)
 
 > **Description**  
-> **Data and Model Poisoning** involves the manipulation of training data or fine-tuning processes to alter the behavior of LLMs. Attackers may introduce biased data, erroneous labels, or malicious samples, leading to degraded model performance, biased outputs, or unintended actions.
+> **Data and Model Poisoning** involves the manipulation of training data or fine-tuning processes to alter the behaviour of LLMs. Attackers may introduce biased data, erroneous labels, or malicious samples, leading to degraded model performance, biased outputs, or unintended actions.
 
 ### CycloneDX SBOM Mapping
 - **Training Data Records**: Track training datasets and their sources, documenting preprocessing methods, validation checks, and provenance in the SBOM.
-- **Model Integrity**: Document fine-tuning processes and validation procedures, specifying defenses against poisoning attempts.
+- **Model Integrity**: Document fine-tuning processes and validation procedures, specifying defences against poisoning attempts.
 - **Testing Artifacts**: Include adversarial testing results in the SBOM, along with monitoring for anomalies in model outputs.
 
 ### Mitigation Strategies
@@ -109,7 +109,7 @@ Here's the continuation from **LLM05:2025** to **LLM10:2025**, maintaining the e
 
 ---
 
-## 5. [LLM05:2025 - Insecure Output Handling](https://genai.owasp.org/llm05)
+## 5. [LLM05:2025 - Insecure Output Handling](https://genai.owasp.org/)
 
 > **Description**  
 > **Insecure Output Handling** occurs when an LLM generates responses that inadvertently expose sensitive data, enable injection attacks, or deliver unsafe content. This may result from insufficient validation of outputs or a failure to properly sanitize responses before they reach the user.
@@ -130,7 +130,7 @@ Here's the continuation from **LLM05:2025** to **LLM10:2025**, maintaining the e
 
 ---
 
-## 6. [LLM06:2025 - Excessive Agency](https://genai.owasp.org/llm06)
+## 6. [LLM06:2025 - Excessive Agency](https://genai.owasp.org/)
 
 > **Description**  
 > **Excessive Agency** occurs when LLMs are granted more permissions or capabilities than necessary, potentially enabling unauthorized actions or escalating privileges. This can result from improper access controls, excessive permissions, or inadequate role-based restrictions.
@@ -151,10 +151,10 @@ Here's the continuation from **LLM05:2025** to **LLM10:2025**, maintaining the e
 
 ---
 
-## 7. [LLM07:2025 - System Prompt Leakage](https://genai.owasp.org/llm07)
+## 7. [LLM07:2025 - System Prompt Leakage](https://genai.owasp.org/)
 
 > **Description**  
-> **System Prompt Leakage** occurs when internal system prompts or configurations meant to guide LLM behavior are inadvertently exposed through LLM outputs. This may reveal sensitive instructions, debugging prompts, or operational secrets that should remain hidden.
+> **System Prompt Leakage** occurs when internal system prompts or configurations meant to guide LLM behaviour are inadvertently exposed through LLM outputs. This may reveal sensitive instructions, debugging prompts, or operational secrets that should remain hidden.
 
 ### CycloneDX SBOM Mapping
 - **Prompt Handling Details**: Include system prompt metadata in the SBOM, specifying access restrictions, encoding methods, and masking techniques.
@@ -172,7 +172,7 @@ Here's the continuation from **LLM05:2025** to **LLM10:2025**, maintaining the e
 
 ---
 
-## 8. [LLM08:2025 - Vector and Embedding Weaknesses](https://genai.owasp.org/llm08)
+## 8. [LLM08:2025 - Vector and Embedding Weaknesses](https://genai.owasp.org/)
 
 > **Description**  
 > **Vector and Embedding Weaknesses** involve vulnerabilities in the representation of data as vectors, which can be manipulated by adversaries to introduce biases or adversarial examples. These weaknesses may lead to incorrect model outputs, privacy leaks, or degraded system performance.
@@ -185,7 +185,7 @@ Here's the continuation from **LLM05:2025** to **LLM10:2025**, maintaining the e
 ### Mitigation Strategies
 - Conduct **adversarial testing** on embeddings to identify potential weaknesses and mitigate their impact, documenting results in the SBOM.
 - Use **robust vectorization methods** that are less susceptible to manipulation, and include these methods within the SBOM.
-- Implement **monitoring tools** to detect anomalous vector behavior, ensuring real-time response capabilities.
+- Implement **monitoring tools** to detect anomalous vector behaviour, ensuring real-time response capabilities.
 
 ### Reference Links
 - [OWASP Adversarial Machine Learning](https://owasp.org/www-community/Adversarial_Machine_Learning)
@@ -193,7 +193,7 @@ Here's the continuation from **LLM05:2025** to **LLM10:2025**, maintaining the e
 
 ---
 
-## 9. [LLM09:2025 - Misinformation](https://genai.owasp.org/llm09)
+## 9. [LLM09:2025 - Misinformation](https://genai.owasp.org/)
 
 > **Description**  
 > **Misinformation** occurs when LLMs generate false, misleading, or harmful outputs, often due to flawed training data, biased models, or lack of verification mechanisms. This can degrade user trust and introduce risks of misinformation dissemination.
@@ -214,7 +214,7 @@ Here's the continuation from **LLM05:2025** to **LLM10:2025**, maintaining the e
 
 ---
 
-## 10. [LLM10:2025 - Unbounded Consumption](https://genai.owasp.org/llm10)
+## 10. [LLM10:2025 - Unbounded Consumption](https://genai.owasp.org/)
 
 > **Description**  
 > **Unbounded Consumption** refers to uncontrolled resource usage by LLMs, potentially leading to denial of service (DoS) attacks or severe performance degradation. This can occur due to improper rate-limiting, memory overflow, or excessive processing demands.
