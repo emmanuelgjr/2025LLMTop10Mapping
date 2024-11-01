@@ -10,22 +10,25 @@ The FAIR model evaluates risk through two main components:
 These components help contextualize LLM vulnerabilities by examining their nature, controls, and consequences.
 
 
-| **Vulnerability**                | **FAIR Mapping**                                                                                                                                                                  |
-|----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| LLM01:2025 Prompt Injection  | **TEF**: High - Prompt injections are easy to attempt. <br> **Vulnerability**: High susceptibility due to reliance on external inputs. <br> **Loss Factors**: Productivity loss, response cost. |
-| LLM02:2025 Sensitive Information Disclosure | **Control Strength**: Moderate to Weak - Depending on safeguards. <br> **Potential Loss**: Confidentiality breach, fines, and penalties.                                         |
-| LLM03:2025 Supply Chain Vulnerabilities     | **Threat Capability**: High - Exploitation of dependencies. <br> **Potential Impact**: Reputation damage, productivity loss.                                                     |
-| LLM04:2025 Data and Model Poisoning         | **Control Strength**: Weak - Hard to detect and mitigate. <br> **Loss Factors**: Competitive disadvantage, recovery costs.                                                       |
-| LLM05:2025 Insecure Output Handling         | **TEF**: Moderate - Lack of rigorous output filters. <br> **Potential Impact**: Confidentiality breach, operational disruption.                                                   |
-| LLM06:2025 Excessive Agency                 | **Vulnerability**: High - Unintended actions by autonomous LLMs. <br> **Potential Impact**: Operational risk, safety risk.                                                       |
-| LLM07:2025 System Prompt Leakage            | **Control Strength**: Moderate - Strong configurations, but bypassable. <br> **Loss Factors**: Confidentiality breach, legal consequences.                                      |
-| LLM08:2025 Vector and Embedding Weaknesses  | **TEF**: Moderate - Requires specific knowledge. <br> **Potential Impact**: Operational disruption, security breach.                                                              |
-| LLM09:2025 Misinformation Generation        | **Control Strength**: Weak - Difficult to detect. <br> **Potential Loss**: Reputation damage, compliance issues.                                                                 |
-| LLM10:2025 Unbounded Consumption            | **Threat Capability**: High - If resource limits are not enforced. <br> **Potential Impact**: Service downtime, operational costs.                                              |
+
+| **Vulnerability**                | **FAIR Mapping**                                                                                                                                                                  | **Recommended Controls**                                                                                 |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| LLM01:2025 Prompt Injection  | **TEF**: High - Prompt injections are easy to attempt. <br> **Vulnerability**: High susceptibility due to reliance on external inputs. <br> **Loss Factors**: Productivity loss, response cost. | Input filtering, prompt constraints, and adversarial testing to detect prompt manipulation attempts.     |
+| LLM02:2025 Sensitive Information Disclosure | **Control Strength**: Moderate to Weak - Depending on safeguards. <br> **Potential Loss**: Confidentiality breach, fines, and penalties.                                         | Implement data sanitization, strict access controls, and differential privacy measures.                  |
+| LLM03:2025 Supply Chain Vulnerabilities     | **Threat Capability**: High - Exploitation of dependencies. <br> **Potential Impact**: Reputation damage, productivity loss.                                                     | Use Software Bill of Materials (SBOM), conduct dependency checks with tools like **CycloneDX** and **Safety**. |
+| LLM04:2025 Data and Model Poisoning         | **Control Strength**: Weak - Hard to detect and mitigate. <br> **Loss Factors**: Competitive disadvantage, recovery costs.                                                       | Employ data validation, anomaly detection in training data, and regular model audits.                    |
+| LLM05:2025 Insecure Output Handling         | **TEF**: Moderate - Lack of rigorous output filters. <br> **Potential Impact**: Confidentiality breach, operational disruption.                                                   | Implement output sanitization, enforce strict output validation, and monitor for sensitive content.      |
+| LLM06:2025 Excessive Agency                 | **Vulnerability**: High - Unintended actions by autonomous LLMs. <br> **Potential Impact**: Operational risk, safety risk.                                                       | Limit LLM permissions, enforce least privilege principles, and require human oversight for critical actions. |
+| LLM07:2025 System Prompt Leakage            | **Control Strength**: Moderate - Strong configurations, but bypassable. <br> **Loss Factors**: Confidentiality breach, legal consequences.                                      | Conceal system prompts, restrict prompt access, and employ API security configurations.                 |
+| LLM08:2025 Vector and Embedding Weaknesses  | **TEF**: Moderate - Requires specific knowledge. <br> **Potential Impact**: Operational disruption, security breach.                                                              | Validate embeddings, use encryption for sensitive embeddings, and conduct adversarial testing.           |
+| LLM09:2025 Misinformation Generation        | **Control Strength**: Weak - Difficult to detect. <br> **Potential Loss**: Reputation damage, compliance issues.                                                                 | Enable cross-verification of facts, enforce human oversight, and implement retrieval-augmented generation (RAG). |
+| LLM10:2025 Unbounded Consumption            | **Threat Capability**: High - If resource limits are not enforced. <br> **Potential Impact**: Service downtime, operational costs.                                              | Enforce rate limits, monitor API usage, and apply load-balancing techniques.                             |
 
 
 
-## LLM01:2025 Prompt Injection
+---
+
+## [LLM01:2025 Prompt Injection](https://genai.owasp.org/)
 - **Description**: Manipulation of model behaviour via crafted inputs.
 - **FAIR Mapping**:
   - **Threat Event Frequency (TEF)**: High - Prompt injections are relatively easy to attempt, increasing attack frequency.
@@ -36,8 +39,9 @@ These components help contextualize LLM vulnerabilities by examining their natur
 - **References**:
   - [Prompt Injection Attack Analysis](https://arxiv.org/abs/2302.12173)
 
+---
 
-## LLM02:2025 Sensitive Information Disclosure
+## [LLM02:2025 Sensitive Information Disclosure](https://genai.owasp.org/)
 - **Description**: Unintended exposure of personal or sensitive data.
 - **FAIR Mapping**:
   - **Control Strength**: Moderate to Weak - Depending on safeguards like data sanitization and encryption.
@@ -47,7 +51,9 @@ These components help contextualize LLM vulnerabilities by examining their natur
 - **References**:
   - [Privacy Risks in LLMs](https://arxiv.org/abs/2307.00691)
 
-## LLM03:2025 Supply Chain Vulnerabilities
+---
+
+## [LLM03:2025 Supply Chain Vulnerabilities](https://genai.owasp.org/)
 - **Description**: Exploits stemming from third-party components in LLM integrations.
 - **FAIR Mapping**:
   - **Threat Capability**: High - Attackers can exploit dependencies or libraries, leading to model compromise.
@@ -57,8 +63,9 @@ These components help contextualize LLM vulnerabilities by examining their natur
 - **References**:
   - [Software Supply Chain Risks](https://atlas.mitre.org/techniques/AML.T0054)
 
+---
 
-## LLM04:2025 Data and Model Poisoning
+## [LLM04:2025 Data and Model Poisoning](https://genai.owasp.org/)
 - **Description**: Introducing malicious data to manipulate model outputs.
 - **FAIR Mapping**:
   - **Control Strength**: Weak - Poisoning attacks are hard to detect and mitigate.
@@ -68,7 +75,9 @@ These components help contextualize LLM vulnerabilities by examining their natur
 - **References**:
   - [Adversarial Machine Learning Attacks](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf)
 
-## LLM05:2025 Insecure Output Handling
+---
+
+## [LLM05:2025 Insecure Output Handling](https://genai.owasp.org/)
 - **Description**: Inadequate handling of generated responses, leading to data leakage or other unintended outcomes.
 - **FAIR Mapping**:
   - **Threat Event Frequency**: Moderate - If output filters are not rigorously applied.
@@ -78,8 +87,9 @@ These components help contextualize LLM vulnerabilities by examining their natur
 - **References**:
   - [LLM Output Risks](https://research.kudelskisecurity.com/2023/05/25/reducing-the-impact-of-prompt-injection-attacks-through-design)
 
+---
 
-## LLM06:2025 Excessive Agency
+## [LLM06:2025 Excessive Agency](https://genai.owasp.org/)
 - **Description**: Models autonomously making decisions beyond intended use.
 - **FAIR Mapping**:
   - **Vulnerability**: High - LLMs designed for autonomous operations may execute unintended actions.
@@ -89,7 +99,9 @@ These components help contextualize LLM vulnerabilities by examining their natur
 - **References**:
   - [AI Decision-Making Risks](https://aivillage.org/large%20language%20models/threat-modeling-llm/)
 
-## LLM07:2025 System Prompt Leakage
+---
+
+## [LLM07:2025 System Prompt Leakage](https://genai.owasp.org/)
 - **Description**: Exposure of internal prompts that reveal system architecture or logic.
 - **FAIR Mapping**:
   - **Control Strength**: Moderate - Strong configurations may prevent access, but are bypassable.
@@ -99,8 +111,9 @@ These components help contextualize LLM vulnerabilities by examining their natur
 - **References**:
   - [System Prompt Leakage Analysis](https://embracethered.com/blog/posts/2023/chatgpt-cross-plugin-request-forgery-and-prompt-injection)
 
+---
 
-## LLM08:2025 Vector and Embedding Weaknesses
+## [LLM08:2025 Vector and Embedding Weaknesses](https://genai.owasp.org/)
 - **Description**: Exploiting vulnerabilities in the embeddings used in LLMs.
 - **FAIR Mapping**:
   - **Threat Event Frequency**: Moderate - Attackers need specific knowledge to exploit embeddings.
@@ -110,7 +123,9 @@ These components help contextualize LLM vulnerabilities by examining their natur
 - **References**:
   - [Adversarial Attacks on Embeddings](https://arxiv.org/abs/2407.07403)
 
-## LLM09:2025 Misinformation Generation
+---
+
+## [LLM09:2025 Misinformation Generation](https://genai.owasp.org/)
 - **Description**: LLMs generating and spreading false or misleading information.
 - **FAIR Mapping**:
   - **Control Strength**: Weak - Detection of misinformation is still challenging.
@@ -120,8 +135,9 @@ These components help contextualize LLM vulnerabilities by examining their natur
 - **References**:
   - [Misinformation in AI](https://arxiv.org/abs/2306.05499)
 
+---
 
-## LLM10:2025 Unbounded Consumption
+## [LLM10:2025 Unbounded Consumption](https://genai.owasp.org/)
 - **Description**: Overuse of system resources or API calls leading to denial of service.
 - **FAIR Mapping**:
   - **Threat Capability**: High - If resource limits are not enforced.
@@ -130,5 +146,7 @@ These components help contextualize LLM vulnerabilities by examining their natur
     - **Operational Costs**: Increased infrastructure expenses.
 - **References**:
   - [Resource Management in AI Systems](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf)
+
+---
 
 Mapping the OWASP Top 10 vulnerabilities for LLM applications to the FAIR framework is essential for understanding and mitigating risks in AI systems. The FAIR Framework applied to organizations can assess the frequency and magnitude of potential losses, enabling them to prioritize security measures and make informed decisions to minimize vulnerabilities. This mapping also provides a structured approach to identifying key risk factors, supporting a more resilient and secure implementation of LLM technologies.
