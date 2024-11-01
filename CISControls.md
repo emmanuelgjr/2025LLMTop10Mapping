@@ -2,6 +2,19 @@
 
 This repo maps the [**OWASP Top 10 for LLM Applications 2025**](https://genai.owasp.org/) vulnerabilities to the relevant CIS Controls. The goal is to help organizations better understand the security measures required to mitigate risks associated with LLM (Large Language Model) applications. The CIS Controls framework alignment offers organizations the ability to strengthen their security posture and adopt a structured approach to mitigating LLM-related vulnerabilities.
 
+| Vulnerability | CIS Controls |
+| ------------- | ------------ |
+| LLM01:2025 - Prompt Injection | CIS Control 3: Data Protection, CIS Control 4: Secure Configuration of Enterprise Assets and Software, CIS Control 8: Audit Log Management |
+| LLM02:2025 - Sensitive Information Disclosure | CIS Control 3: Data Protection, CIS Control 4: Secure Configuration, CIS Control 9: Email and Web Browser Protections |
+| LLM03:2025 - Supply Chain Vulnerabilities | CIS Control 2: Inventory and Control of Software Assets, CIS Control 5: Account Management, CIS Control 7: Continuous Vulnerability Management |
+| LLM04:2025 - Data and Model Poisoning | CIS Control 7: Continuous Vulnerability Management, CIS Control 13: Network Monitoring and Defense, CIS Control 18: Penetration Testing |
+| LLM05:2025 - Insecure Output Handling | CIS Control 3: Data Protection, CIS Control 8: Audit Log Management, CIS Control 16: Application Software Security |
+| LLM06:2025 - Excessive Agency | CIS Control 5: Account Management, CIS Control 11: Secure Configuration for Network Devices, CIS Control 17: Incident Response Management |
+| LLM07:2025 - System Prompt Leakage | CIS Control 4: Secure Configuration, CIS Control 10: Malware Defenses, CIS Control 8: Audit Log Management |
+| LLM08:2025 - Vector and Embedding Weaknesses | CIS Control 16: Application Software Security, CIS Control 7: Continuous Vulnerability Management, CIS Control 3: Data Protection |
+| LLM09:2025 - Misinformation | CIS Control 13: Network Monitoring and Defense, CIS Control 17: Security Awareness and Skills Training, CIS Control 7: Continuous Vulnerability Management |
+| LLM10:2025 - Unbounded Consumption | CIS Control 4: Secure Configuration, CIS Control 5: Account Management, CIS Control 13: Network Monitoring and Defense |
+
 ---
 
 ## LLM01:2025 - Prompt Injection: Mapped CIS Controls
