@@ -2,17 +2,20 @@
 
 This repo presents a detailed mapping of the [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org) to the [MITRE ATLAS](https://atlas.mitre.org) framework. It aims to provide security practitioners with a comprehensive understanding of vulnerabilities, associated threats, and recommended mitigations in Large Language Model (LLM) applications, aligning efforts across both OWASP and MITRE frameworks for a robust AI security posture.
 
-## Table of Contents
-1. [LLM01:2025 - Prompt Injection](https://genai.owasp.org)
-2. [LLM02:2025 - Sensitive Information Disclosure](https://genai.owasp.org)
-3. [LLM03:2025 - Supply Chain Vulnerabilities](https://genai.owasp.org)
-4. [LLM04:2025 - Data and Model Poisoning](https://genai.owasp.org)
-5. [LLM05:2025 - Insecure Output Handling](https://genai.owasp.org)
-6. [LLM06:2025 - Excessive Agency](https://genai.owasp.org)
-7. [LLM07:2025 - System Prompt Leakage](https://genai.owasp.org)
-8. [LLM08:2025 - Vector and Embedding Weaknesses](https://genai.owasp.org)
-9. [LLM09:2025 - Misinformation](https://genai.owasp.org)
-10. [LLM10:2025 - Unbounded Consumption](https://genai.owasp.org)
+
+| Vulnerabilities                         | MITRE ATLAS Mapping                                                                                                                                          | Mitigation                                                                                                   |
+|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| LLM01:2025 - Prompt Injection       | [AML.T0051.000 - Direct Prompt Injection](https://atlas.mitre.org/techniques/AML.T0051.000) <br> [AML.T0051.001 - Indirect Prompt Injection](https://atlas.mitre.org/techniques/AML.T0051.001) <br> [AML.T0054 - LLM Jailbreak Injection](https://atlas.mitre.org/techniques/AML.T0054) | Input validation and sanitization, adversarial testing, constraints on model behavior                       |
+| LLM02:2025 - Sensitive Information Disclosure | [AML.T0021 - Data Leakage](https://atlas.mitre.org/techniques/AML.T0021) <br> [AML.T0030 - Information Disclosure](https://atlas.mitre.org/techniques/AML.T0030) | Data sanitization, differential privacy, strict access controls                                             |
+| LLM03:2025 - Supply Chain Vulnerabilities | [AML.T0056 - Adversarial Model Manipulation](https://atlas.mitre.org/techniques/AML.T0056) <br> [AML.T0048 - Model Contamination](https://atlas.mitre.org/techniques/AML.T0048) | Model provenance checks, digital signatures, federated learning, code integrity checks                      |
+| LLM04:2025 - Data and Model Poisoning | [AML.T0032 - Data Poisoning](https://atlas.mitre.org/techniques/AML.T0032) <br> [AML.T0027 - Model Inversion](https://atlas.mitre.org/techniques/AML.T0027) | Data validation, adversarial training, continuous monitoring of data pipelines                              |
+| LLM05:2025 - Insecure Output Handling | [AML.T0037 - Output Manipulation](https://atlas.mitre.org/techniques/AML.T0037) | Output sanitization, content filtering, secure rendering practices                                          |
+| LLM06:2025 - Excessive Agency       | [AML.T0015 - LLM Capability Escalation](https://atlas.mitre.org/techniques/AML.T0015) | Least-privilege access controls, human-in-the-loop verification, limit sensitive command execution          |
+| LLM07:2025 - System Prompt Leakage  | [AML.T0041 - Configuration Exposure](https://atlas.mitre.org/techniques/AML.T0041) | Secure system prompts with access restrictions and encryption, tokenization of sensitive prompts            |
+| LLM08:2025 - Vector and Embedding Weaknesses | [AML.T0063 - Embedding Manipulation](https://atlas.mitre.org/techniques/AML.T0063) | Vector validation, adversarial testing, secure embedding generation                                         |
+| LLM09:2025 - Misinformation         | [AML.T0045 - Disinformation](https://atlas.mitre.org/techniques/AML.T0045) | Retrieval-augmented generation (RAG), cross-verification, human review                                      |
+| LLM10:2025 - Unbounded Consumption  | [AML.T0025 - Resource Exhaustion](https://atlas.mitre.org/techniques/AML.T0025) | Rate limiting, quota enforcement, activity monitoring, resource-efficient model design                      |
+
 
 ---
 
