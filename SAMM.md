@@ -37,6 +37,8 @@ This repo maps the vulnerabilities described in the [OWASP Top 10 for Large Lang
   - **Operations**:
     - **Environment Hardening**: Implement runtime safeguards to prevent prompt alterations and unauthorized command executions.
 
+---
+
 ### 2. [LLM02:2025 Sensitive Information Disclosure](https://genai.owasp.org)
 
 **Description**: This vulnerability involves LLMs inadvertently revealing personal, proprietary, or confidential information due to flawed prompt handling or model design.
@@ -52,6 +54,8 @@ This repo maps the vulnerabilities described in the [OWASP Top 10 for Large Lang
     - **Security Testing**: Perform static and dynamic analysis to detect potential leaks of sensitive information.
   - **Operations**:
     - **Incident Management**: Implement processes to identify and respond to incidents of unintended sensitive data disclosure.
+
+---
 
 ### 3. [LLM03:2025 Supply Chain Vulnerabilities](https://genai.owasp.org)
 
@@ -69,6 +73,8 @@ This repo maps the vulnerabilities described in the [OWASP Top 10 for Large Lang
   - **Operations**:
     - **Operational Monitoring**: Monitor for signs of supply chain compromise, such as unusual behaviour patterns in LLM outputs.
 
+---
+
 ### 4. [LLM04:2025 Data and Model Poisoning](https://genai.owasp.org)
 
 **Description**: Data and model poisoning involves adversaries introducing malicious data to manipulate model training or outputs.
@@ -84,6 +90,8 @@ This repo maps the vulnerabilities described in the [OWASP Top 10 for Large Lang
     - **Security Testing**: Use adversarial testing to simulate poisoning attempts and validate model integrity.
   - **Operations**:
     - **Environment Hardening**: Regularly update and retrain models to reduce the impact of poisoning over time.
+
+---
 
 ### 5. [LLM05:2025 Insecure Output Handling](https://genai.owasp.org)
 
@@ -101,6 +109,8 @@ This repo maps the vulnerabilities described in the [OWASP Top 10 for Large Lang
   - **Operations**:
     - **Incident Management**: Establish processes to address issues arising from insecure output handling.
 
+---
+
 ### 6. [LLM06:2025 Excessive Agency](https://genai.owasp.org)
 
 **Description**: LLMs may exhibit excessive autonomy, executing tasks without proper oversight, leading to unintended consequences.
@@ -116,6 +126,8 @@ This repo maps the vulnerabilities described in the [OWASP Top 10 for Large Lang
     - **Security Testing**: Test for unintended behaviours resulting from excessive model agency.
   - **Operations**:
     - **Operational Monitoring**: Continuously monitor LLM operations to prevent unauthorized actions.
+
+---
 
 ### 7. [LLM07:2025 System Prompt Leakage](https://genai.owasp.org)
 
@@ -133,6 +145,8 @@ This repo maps the vulnerabilities described in the [OWASP Top 10 for Large Lang
   - **Operations**:
     - **Environment Hardening**: Implement measures to protect system prompts during deployment and operation.
 
+---
+
 ### 8. [LLM08:2025 Vector and Embedding Weaknesses](https://genai.owasp.org)
 
 **Description**: Weaknesses in vector representation can lead to adversarial manipulation of LLMs.
@@ -149,6 +163,8 @@ This repo maps the vulnerabilities described in the [OWASP Top 10 for Large Lang
   - **Operations**:
     - **Operational Monitoring**: Monitor vectors for abnormal or adversarial patterns.
 
+---
+
 ### 9. [LLM09:2025 Misinformation](https://genai.owasp.org)
 
 **Description**: LLMs can produce inaccurate or misleading information that may have significant consequences.
@@ -164,6 +180,8 @@ This repo maps the vulnerabilities described in the [OWASP Top 10 for Large Lang
     - **Security Testing**: Conduct fact-checking tests on model outputs.
   - **Operations**:
     - **User Education**: Inform users about potential misinformation risks and provide guidance.
+
+---
 
 ### 10. [LLM10:2025 Unbounded Consumption](https://genai.owasp.org)
 
