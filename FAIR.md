@@ -10,8 +10,6 @@ The FAIR model evaluates risk through two main components:
 These components help contextualize LLM vulnerabilities by examining their nature, controls, and consequences.
 
 
-# Vulnerabilities and FAIR Mapping Table
-
 | **Vulnerability**                | **FAIR Mapping**                                                                                                                                                                  |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | LLM01:2025 Prompt Injection  | **TEF**: High - Prompt injections are easy to attempt. <br> **Vulnerability**: High susceptibility due to reliance on external inputs. <br> **Loss Factors**: Productivity loss, response cost. |
