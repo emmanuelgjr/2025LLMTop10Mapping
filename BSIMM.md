@@ -1,6 +1,22 @@
 # OWASP Top 10 for LLM Applications 2025 Mapped to BSIMM
 
-This repo objective is to enhance LLM application security by mapping OWASP Top 10 for LLM Apps 2025 vulnerabilities to the BSIMM framework.
+This repo objective is to enhance LLM application security by mapping OWASP Top 10 for LLM Apps 2025 vulnerabilities to the [**Building Security In Maturity Model (BSIMM)**](https://www.blackduck.com/services/security-program/bsimm-maturity-model.html) framework.
+
+
+| Vulnerability                            | BSIMM Categories                                        |
+|------------------------------------------|---------------------------------------------------------|
+| LLM01:2025 Prompt Injection          | SM1.1, SM2.3, ST3.3                                    |
+| LLM02:2025 Sensitive Information Disclosure | CR1.2, SM1.3, ST3.4                           |
+| LLM03:2025 Supply Chain Risks        | AM2.2, AM3.3, SM2.4                                    |
+| LLM04:2025 Data and Model Poisoning  | AM3.1, ST3.1, CR2.2                                    |
+| LLM05:2025 Insecure Output Handling  | ST3.2, SE2.2, AM1.3                                    |
+| LLM06:2025 Excessive Agency          | SM3.1, ST1.1, ST3.3                                    |
+| LLM07:2025 System Prompt Leakage     | SE1.1, ST1.3, AM2.3                                    |
+| LLM08:2025 Vector and Embedding Weaknesses | ST1.4, SE3.1, AM1.1                          |
+| LLM09:2025 Misinformation            | CR2.1, SE3.2, SM2.2                                    |
+| LLM10:2025 Unbounded Consumption     | AM2.1, SE2.1, CR1.1                                    |
+
+
 
 ## LLM01:2025 Prompt Injection
 - **Description:** Malicious prompts can alter LLM behaviour, resulting in unauthorized data access or unintended operations.
@@ -45,9 +61,9 @@ This repo objective is to enhance LLM application security by mapping OWASP Top 
 ## LLM06:2025 Excessive Agency
 - **Description:** LLMs may exhibit unexpected autonomy, performing unauthorized actions.
 - **BSIMM Mapping:**
-  - **SM3.1:** Develop expertise in governing LLM behavior limits.
+  - **SM3.1:** Develop expertise in governing LLM behaviour limits.
   - **ST1.1:** Assess risks of excessive LLM autonomy.
-  - **ST3.3:** Implement strict controls to enforce LLM behavior constraints.
+  - **ST3.3:** Implement strict controls to enforce LLM behaviour constraints.
 - **Resources:** [LLM Governance Best Practices](https://genai.owasp.org)
 
 ## LLM07:2025 System Prompt Leakage
