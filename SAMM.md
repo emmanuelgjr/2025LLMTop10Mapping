@@ -163,7 +163,7 @@ This repo maps the vulnerabilities described in the [OWASP Top 10 for Large Lang
   - **Operations**:
     - **Operational Monitoring**: Continuously monitor resource usage to prevent unbounded consumption.
 
-
+---
 
 It is crucial for stakeholders across governance, design, implementation, verification, and operational phases to continuously collaborate and ensure the responsible development and deployment of LLM technologies.
 
