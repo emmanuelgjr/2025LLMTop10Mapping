@@ -2,19 +2,19 @@
 
 This repo mapped vulnerabilities from the [OWASP Top 10 for Large Language Model Applications 2025](https://genai.owasp.org) to the [CycloneDX Machine Learning Software Bill of Materials (ML SBOM)](https://cyclonedx.org/). The purpose is to enhance the security, transparency, and integrity of LLM-based systems through a structured ML SBOM.
 
-## Table of Contents
-1. [LLM01:2025 - Prompt Injection](#llm01-2025---prompt-injection)
-2. [LLM02:2025 - Sensitive Information Disclosure](#llm02-2025---sensitive-information-disclosure)
-3. [LLM03:2025 - Supply Chain Risks](#llm03-2025---supply-chain-risks)
-4. [LLM04:2025 - Data and Model Poisoning](#llm04-2025---data-and-model-poisoning)
-5. [LLM05:2025 - Insecure Output Handling](#llm05-2025---insecure-output-handling)
-6. [LLM06:2025 - Excessive Agency](#llm06-2025---excessive-agency)
-7. [LLM07:2025 - System Prompt Leakage](#llm07-2025---system-prompt-leakage)
-8. [LLM08:2025 - Vector and Embedding Weaknesses](#llm08-2025---vector-and-embedding-weaknesses)
-9. [LLM09:2025 - Misinformation](#llm09-2025---misinformation)
-10. [LLM10:2025 - Unbounded Consumption](#llm10-2025---unbounded-consumption)
-11. [Conclusion](#conclusion)
-12. [Further Reading](#further-reading)
+| **Vulnerabilities**                      | **CycloneDX ML SBOM**                                                                                                                                                        |
+|------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **LLM01:2025 - Prompt Injection**        | - Component Metadata: Details of prompt handlers and filters <br> - Data Sources & Inputs: Input handling mechanisms <br> - Security Testing: Coverage in SBOM               |
+| **LLM02:2025 - Sensitive Information Disclosure** | - Data Lineage: Sensitive data sources and access controls <br> - Privacy Controls: Document privacy mechanisms <br> - Access Restrictions: Component access control configs |
+| **LLM03:2025 - Supply Chain Risks**      | - Dependency Inventory: List of external dependencies <br> - Provenance Verification: Cryptographic signatures <br> - Component Risks: Known vulnerabilities and licenses   |
+| **LLM04:2025 - Data and Model Poisoning**| - Training Data Records: Sources and validation of training data <br> - Model Integrity: Fine-tuning validation <br> - Testing Artifacts: Adversarial testing in SBOM       |
+| **LLM05:2025 - Insecure Output Handling**| - Output Validation Mechanisms: Sanitization and encoding methods <br> - Response Filtering: Filtering unsafe outputs <br> - Security Testing: Output validation routines    |
+| **LLM06:2025 - Excessive Agency**        | - Component Permissions: Permissions of LLM components <br> - Access Controls: Least-privilege settings <br> - Audit Mechanisms: Logs and RBAC configurations               |
+| **LLM07:2025 - System Prompt Leakage**   | - Prompt Handling Details: Access restrictions and masking <br> - Access Controls for Prompts: Storage and sanitization methods <br> - Testing Artifacts: Prompt exposure tests |
+| **LLM08:2025 - Vector and Embedding Weaknesses** | - Embedding Mechanisms: Document vectorization and vulnerabilities <br> - Adversarial Testing Results: Detection methods <br> - Anomaly Detection: Monitor vector integrity  |
+| **LLM09:2025 - Misinformation**          | - Output Validation Methods: Cross-verification and oversight <br> - Misinformation Filtering: Detection techniques <br> - Human Oversight: Review procedures in SBOM       |
+| **LLM10:2025 - Unbounded Consumption**   | - Resource Constraints: Memory and processing limits <br> - Performance Monitoring: Tools tracking usage <br> - Rate-Limiting Details: DoS prevention measures             |
+
 
 ---
 
