@@ -1,6 +1,6 @@
 # OWASP Top 10 for Large Language Model Applications 2025 Mapped to NIST Cybersecurity Framework (CSF) 2.0
 
-This repo provides a comprehensive mapping of each vulnerability from the OWASP Top 10 for LLM Applications 2025 to the corresponding categories, subcategories, and functions in the NIST Cybersecurity Framework (CSF) 2.0.
+This repo provides a comprehensive mapping of each vulnerability from the OWASP Top 10 for LLM Applications 2025 to the corresponding categories, subcategories, and functions in the [**NIST Cybersecurity Framework (CSF) 2.0.**](https://www.nist.gov/cyberframework)
 
 
 | **Vulnerability**                    | **NIST CSF Function** | **NIST CSF Category**       | **NIST CSF Subcategory**                                           |
