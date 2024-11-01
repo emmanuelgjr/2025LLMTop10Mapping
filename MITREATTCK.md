@@ -2,17 +2,20 @@
 
 The OWASP Top 10 for LLM Applications identifies the most critical vulnerabilities impacting AI models, while the MITRE ATT&CK framework provides a comprehensive collection of adversary tactics and techniques. Mapping these vulnerabilities to MITRE ATT&CK to bridge the gap between vulnerability identification and actionable mitigation, enabling a proactive approach to AI security for developers, security teams, and stakeholders.
 
-## Table of Contents
-- [LLM01:2025 Prompt Injection](https://genai.owasp.org/)
-- [LLM02:2025 Sensitive Information Disclosure](https://genai.owasp.org/)
-- [LLM03:2025 Supply Chain Risks](https://genai.owasp.org/)
-- [LLM04:2025 Data and Model Poisoning](https://genai.owasp.org/)
-- [LLM05:2025 Insecure Output Handling](https://genai.owasp.org/)
-- [LLM06:2025 Excessive Agency](https://genai.owasp.org/)
-- [LLM07:2025 System Prompt Leakage](https://genai.owasp.org/)
-- [LLM08:2025 Vector and Embedding Weaknesses](https://genai.owasp.org/)
-- [LLM09:2025 Misinformation](https://genai.owasp.org/)
-- [LLM10:2025 Unbounded Consumption](https://genai.owasp.org/)
+| Vulnerability                   | MITRE ATT&CK Mapping                                                                 | Mitigation                                                                                           |
+|---------------------------------|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| LLM01:2025 Prompt Injection     | [Direct Prompt Injection (AML.T0051.000) - Influence Operations](https://atlas.mitre.org/techniques/AML.T0051.000)  | Implement input validation, human oversight, and adversarial testing                                |
+|                                 | [Indirect Prompt Injection (AML.T0051.001) - Influence Operations](https://atlas.mitre.org/techniques/AML.T0051.001) |                                                                                                      |
+| LLM02:2025 Sensitive Information Disclosure | [Data from Cloud Storage Object (T1530) - Exfiltration](https://attack.mitre.org/techniques/T1530/)  | Data sanitization, access controls, and federated learning                                          |
+|                                 | [Application Layer Protocol (T1071) - Command and Control](https://attack.mitre.org/techniques/T1071/) |                                                                                                      |
+| LLM03:2025 Supply Chain Risks   | [Supply Chain Compromise (T1195) - Initial Access](https://attack.mitre.org/techniques/T1195/)  | Component verification, patch management                                                            |
+| LLM04:2025 Data and Model Poisoning | [Jailbreak Injection (AML.T0054) - Manipulation of Model Behaviors](https://atlas.mitre.org/techniques/AML.T0054) | Adversarial training, anomaly detection                                                             |
+| LLM05:2025 Insecure Output Handling | [Command and Scripting Interpreter (T1059) - Execution](https://attack.mitre.org/techniques/T1059/) | Output filtering, rule enforcement                                                                  |
+| LLM06:2025 Excessive Agency     | [System Script Proxy Execution (T1216) - Execution](https://attack.mitre.org/techniques/T1216/)  | Access control, privilege control                                                                   |
+| LLM07:2025 System Prompt Leakage | [Indicator Removal on Host (T1070) - Defense Evasion](https://attack.mitre.org/techniques/T1070/)  | Prompt obfuscation, configuration reviews                                                           |
+| LLM08:2025 Vector and Embedding Weaknesses | [Data Obfuscation (T1001) - Command and Control](https://attack.mitre.org/techniques/T1001/)  | Embedding validation, adversarial testing                                                           |
+| LLM09:2025 Misinformation       | [Web Service (T1102) - Command and Control](https://attack.mitre.org/techniques/T1102/)  | Retrieval-augmented generation (RAG), human oversight                                               |
+| LLM10:2025 Unbounded Consumption | [Endpoint Denial of Service (T1499) - Impact](https://attack.mitre.org/techniques/T1499/)  | Rate limiting, load balancing, monitoring                                                           |
 
 ---
 
