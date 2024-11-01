@@ -1,27 +1,27 @@
 # OWASP Top 10 for LLM Applications 2025 Mapped to ENISA
 
-This repo maps each vulnerability to relevant frameworks and controls outlined by the European Union Agency for Cybersecurity (ENISA). By aligning LLM vulnerabilities with ENISA standards, we aim to assist security professionals in developing secure LLM technology and advancing the safe deployment of LLM applications.
+This repo maps each vulnerability to relevant frameworks and controls outlined by the [**European Union Agency for Cybersecurity (ENISA)**](https://www.enisa.europa.eu/). By aligning LLM vulnerabilities with ENISA standards, we aim to assist security professionals in developing secure LLM technology and advancing the safe deployment of LLM applications.
 
 Additionally, it provides practical examples, mitigation timelines, severity ratings, and role-specific guidance to help stakeholders prioritize and effectively manage security risks associated with LLM deployments.
 
+| **Vulnerability**                         | **Severity Rating** | **ENISA Mapping and Description**                                                                                                                                                                                                                             | **Mitigation Techniques**                          |
+|---------------------------------------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| LLM01:2025 Prompt Injection           | High           | [ENISA AI Threat Landscape](https://www.enisa.europa.eu/topics/ai-threat-landscape): Highlights the need for secure model inputs. [ENISA Secure Development Principles](https://www.enisa.europa.eu/publications/guideline-on-software-security): Input validation. | Input filtering, adversarial testing          |
+| LLM02:2025 Sensitive Information Disclosure | High      | [ENISA’s Guidelines on PII Protection](https://www.enisa.europa.eu): Emphasizes data minimization and access control. [ENISA's Secure Data Handling](https://www.enisa.europa.eu): Implements federated learning, differential privacy.                                                           | Data sanitization, access control              |
+| LLM03:2025 Supply Chain Risks         | Medium         | [ENISA Supply Chain Guidelines](https://www.enisa.europa.eu): Emphasizes third-party risk management, software bill of materials (SBOM).                                                                                                                                                          | Supply chain audits, digital signatures        |
+| LLM04:2025 Data and Model Poisoning   | High           | [ENISA AI Security](https://www.enisa.europa.eu): Recommends adversarial detection techniques and model retraining.                                                                                                                                                                                | Federated learning, adversarial training       |
+| LLM05:2025 Insecure Output Handling   | Medium         | [ENISA Output Security Recommendations](https://www.enisa.europa.eu): Emphasizes output validation and secure parsing mechanisms.                                                                                                                                                                 | Output validation, predefined filters          |
+| LLM06:2025 Excessive Agency           | Medium         | [ENISA Autonomy Control Guidelines](https://www.enisa.europa.eu): Recommends strict permission controls and human-in-the-loop mechanisms for high-risk actions.                                                                                                                                    | Privilege control, human oversight             |
+| LLM07:2025 System Prompt Leakage      | High           | [ENISA Configuration Security](https://www.enisa.europa.eu): Ensures system prompts are concealed and protected from unauthorized access.                                                                                                                                                         | Preamble protection, system configuration audit|
+| LLM08:2025 Vector and Embedding Weaknesses | Medium    | [ENISA Embedding Security](https://www.enisa.europa.eu): Promotes secure handling of vectors to prevent unauthorized inference.                                                                                                                                                                   | Encrypted embeddings, differential privacy     |
+| LLM09:2025 Misinformation             | High           | [ENISA’s Disinformation Mitigation](https://www.enisa.europa.eu): Recommends retrieval-augmented generation (RAG) and human oversight.                                                                                                                                                            | Cross-verification, retrieval-augmented generation (RAG)  |
+| LLM10:2025 Unbounded Consumption      | Medium         | [ENISA Resource Control](https://www.enisa.europa.eu): Focuses on rate limiting, quota management, and capacity planning to prevent overconsumption.                                                                                                                                               | Rate limiting, resource monitoring             |
 
-| Vulnerability                         | ENISA Mapping                                                                                                                                                     |
-|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| LLM01:2025 Prompt Injection           | ENISA AI Threat Landscape, ENISA Secure Development Principles                                                                                                    |
-| LLM02:2025 Sensitive Information Disclosure | ENISA’s Guidelines on PII Protection, ENISA's Secure Data Handling                                                                                               |
-| LLM03:2025 Supply Chain Risks         | ENISA Supply Chain Guidelines                                                                                                                                     |
-| LLM04:2025 Data and Model Poisoning   | ENISA AI Security                                                                                                                                                 |
-| LLM05:2025 Insecure Output Handling   | ENISA Output Security Recommendations                                                                                                                            |
-| LLM06:2025 Excessive Agency           | ENISA Autonomy Control Guidelines                                                                                                                                |
-| LLM07:2025 System Prompt Leakage      | ENISA Configuration Security                                                                                                                                      |
-| LLM08:2025 Vector and Embedding Weaknesses | ENISA Embedding Security                                                                                                                                         |
-| LLM09:2025 Misinformation             | ENISA’s Disinformation Mitigation                                                                                                                                |
-| LLM10:2025 Unbounded Consumption      | ENISA Resource Control                                                                                                                                           |
 
 
 ---
 
-### LLM01:2025 Prompt Injection
+### [LLM01:2025 Prompt Injection](https://genai.owasp.org/)
 
 **Severity Rating:** High
 
@@ -54,7 +54,7 @@ Additionally, it provides practical examples, mitigation timelines, severity rat
 
 ---
 
-### LLM02:2025 Sensitive Information Disclosure
+### [LLM02:2025 Sensitive Information Disclosure](https://genai.owasp.org/)
 
 **Severity Rating:** High
 
@@ -86,7 +86,7 @@ Additionally, it provides practical examples, mitigation timelines, severity rat
 
 ---
 
-### LLM03:2025 Supply Chain Risks
+### [LLM03:2025 Supply Chain Risks](https://genai.owasp.org/)
 
 **Severity Rating:** Medium
 
@@ -115,7 +115,7 @@ Additionally, it provides practical examples, mitigation timelines, severity rat
 
 ---
 
-### LLM04:2025 Data and Model Poisoning
+### [LLM04:2025 Data and Model Poisoning](https://genai.owasp.org/)
 
 **Severity Rating:** High
 
@@ -144,7 +144,7 @@ Additionally, it provides practical examples, mitigation timelines, severity rat
 
 ---
 
-### LLM05:2025 Insecure Output Handling
+### [LLM05:2025 Insecure Output Handling](https://genai.owasp.org/)
 
 **Severity Rating:** Medium
 
@@ -173,7 +173,7 @@ Additionally, it provides practical examples, mitigation timelines, severity rat
 
 ---
 
-### LLM06:2025 Excessive Agency
+### [LLM06:2025 Excessive Agency](https://genai.owasp.org/)
 
 **Severity Rating:** Medium
 
@@ -202,7 +202,7 @@ Additionally, it provides practical examples, mitigation timelines, severity rat
 
 ---
 
-### LLM07:2025 System Prompt Leakage
+### [LLM07:2025 System Prompt Leakage](https://genai.owasp.org/)
 
 **Severity Rating:** High
 
@@ -231,7 +231,7 @@ Additionally, it provides practical examples, mitigation timelines, severity rat
 
 ---
 
-### LLM08:2025 Vector and Embedding Weaknesses
+### [LLM08:2025 Vector and Embedding Weaknesses](https://genai.owasp.org/)
 
 **Severity Rating:** Medium
 
@@ -259,7 +259,7 @@ Additionally, it provides practical examples, mitigation timelines, severity rat
 
 ---
 
-### LLM09:2025 Misinformation
+### [LLM09:2025 Misinformation](https://genai.owasp.org/)
 
 **Severity Rating:** High
 
@@ -288,7 +288,7 @@ Additionally, it provides practical examples, mitigation timelines, severity rat
 
 ---
 
-### LLM10:2025 Unbounded Consumption
+### [LLM10:2025 Unbounded Consumption](https://genai.owasp.org/)
 
 **Severity Rating:** Medium
 
@@ -356,7 +356,7 @@ To ensure swift responses to LLM security incidents, consider the following:
 
 ---
 
-The EU plays an important part in regulating and securing systems worldwide. Organizations that trade with the region must comply with the requirements to ensure ethical and secure, products, services and solutions.
+The EU plays an important part in regulating and securing systems worldwide. Organizations that trade with the region must comply with the requirements to ensure ethical and secure, products, services and solutions. For more info visit [**ENISA**](https://www.enisa.europa.eu/) website
 
 ---
 
