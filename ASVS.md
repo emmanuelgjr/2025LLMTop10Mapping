@@ -1,7 +1,7 @@
 #  OWASP Top 10 for Large Language Model Applications 2025 Mapped to ASVS
 
 
-This repo provides a detailed mapping of the vulnerabilities outlined in the [OWASP Top 10 for LLM Applications: 2025](https://genai.owasp.org) to the [OWASP Application Security Verification Standard (ASVS)](https://owasp.org/ASVS/). The goal is to offer developers and security teams a comprehensive view of how to align AI-specific security measures with broader application security standards.
+This repo provides a detailed mapping of the vulnerabilities outlined in the [OWASP Top 10 for LLM Applications: 2025](https://genai.owasp.org) to the [**OWASP Application Security Verification Standard (ASVS)**](https://owasp.org/ASVS/). The goal is to offer developers and security teams a comprehensive view of how to align AI-specific security measures with broader application security standards.
 
 | **Vulnerability**                         | **Risk Level** | **ASVS Categories**                                  | **Key Risks**                              | **Top Mitigation Steps**                                |
 |-------------------------------------------|------------|--------------------------------------------------|----------------------------------------|-----------------------------------------------------|
@@ -259,7 +259,7 @@ This repo provides a detailed mapping of the vulnerabilities outlined in the [OW
 
 ---
 
-This mapping serves as a guide for integrating AI-specific security controls into broader application security standards. By aligning OWASP's Top 10 for LLM Applications with ASVS, organizations can enhance their security posture and ensure the safe deployment of LLMs.
+This mapping serves as a guide for integrating AI-specific security controls into broader application security standards. Orchestrating OWASP's Top 10 for LLM Applications with ASVS allows organizations to enhance their security posture and ensure the safe deployment of LLMs.
 
 **Next Steps**:
 - Prioritize implementation based on risk levels associated with each vulnerability.
