@@ -19,7 +19,7 @@ The OWASP Top 10 for LLM Applications identifies the most critical vulnerabiliti
 
 ---
 
-### LLM01:2025 Prompt Injection
+### [LLM01:2025 Prompt Injection](https://genai.owasp.org/)
 **Description:** Prompt Injection occurs when attackers manipulate the input prompts of LLMs to alter behaviour or outputs. These attacks can bypass safety measures, gain unauthorized access, or influence decisions.
 
 #### MITRE ATT&CK Mapping
@@ -35,7 +35,9 @@ The OWASP Top 10 for LLM Applications identifies the most critical vulnerabiliti
 - **Human Oversight**: Use human-in-the-loop mechanisms for high-risk actions.
 - **Adversarial Testing**: Regular adversarial testing to identify vulnerabilities.
 
-### LLM02:2025 Sensitive Information Disclosure
+---
+
+### [LLM02:2025 Sensitive Information Disclosure](https://genai.owasp.org/)
 **Description:** LLMs risk disclosing sensitive data (e.g., PII, proprietary information) during interactions or through outputs, leading to privacy violations and data breaches.
 
 #### MITRE ATT&CK Mapping
@@ -51,7 +53,9 @@ The OWASP Top 10 for LLM Applications identifies the most critical vulnerabiliti
 - **Access Controls**: Enforce strict access controls and clear user policies.
 - **Federated Learning**: Implement federated learning to minimize centralized data collection.
 
-### LLM03:2025 Supply Chain Risks
+---
+
+### [LLM03:2025 Supply Chain Risks](https://genai.owasp.org/)
 **Description:** Vulnerabilities arise from dependencies on third-party data, tools, or software integrated into LLM workflows.
 
 #### MITRE ATT&CK Mapping
@@ -63,7 +67,9 @@ The OWASP Top 10 for LLM Applications identifies the most critical vulnerabiliti
 - **Component Verification**: Verify third-party components' integrity through code signing and cryptographic validation.
 - **Patch Management**: Apply strong version control and patch management to secure dependencies.
 
-### LLM04:2025 Data and Model Poisoning
+---
+
+### [LLM04:2025 Data and Model Poisoning](https://genai.owasp.org/)
 **Description:** Attackers can inject malicious data into training datasets, compromising model integrity or altering outputs.
 
 #### MITRE ATT&CK Mapping
@@ -75,7 +81,9 @@ The OWASP Top 10 for LLM Applications identifies the most critical vulnerabiliti
 - **Adversarial Training**: Conduct adversarial training and robust validation of data sources.
 - **Anomaly Detection**: Apply anomaly detection methods to identify unusual patterns in datasets.
 
-### LLM05:2025 Insecure Output Handling
+---
+
+### [LLM05:2025 Insecure Output Handling](https://genai.owasp.org/)
 **Description:** Improper handling of LLM outputs can result in the leakage of sensitive information or execution of unsafe actions.
 
 #### MITRE ATT&CK Mapping
@@ -87,7 +95,9 @@ The OWASP Top 10 for LLM Applications identifies the most critical vulnerabiliti
 - **Output Filtering**: Implement output filtering and validation mechanisms.
 - **Rule Enforcement**: Enforce strict rules for permissible output formats and contexts.
 
-### LLM06:2025 Excessive Agency
+---
+
+### [LLM06:2025 Excessive Agency](https://genai.owasp.org/)
 **Description:** LLMs with excessive decision-making power can autonomously perform actions that impact business processes or user safety.
 
 #### MITRE ATT&CK Mapping
@@ -99,7 +109,9 @@ The OWASP Top 10 for LLM Applications identifies the most critical vulnerabiliti
 - **Access Control**: Limit model access to critical functions.
 - **Privilege Control**: Implement privilege control and role-based access for LLMs.
 
-### LLM07:2025 System Prompt Leakage
+---
+
+### [LLM07:2025 System Prompt Leakage](https://genai.owasp.org/)
 **Description:** Exposure of system prompts can reveal internal configurations or enable targeted prompt injections.
 
 #### MITRE ATT&CK Mapping
@@ -111,7 +123,9 @@ The OWASP Top 10 for LLM Applications identifies the most critical vulnerabiliti
 - **Prompt Obfuscation**: Obfuscate system prompts and use dynamic prompt management.
 - **Configuration Reviews**: Conduct regular reviews of system configurations to prevent leakage.
 
-### LLM08:2025 Vector and Embedding Weaknesses
+---
+
+### [LLM08:2025 Vector and Embedding Weaknesses](https://genai.owasp.org/)
 **Description:** Weaknesses in vector representations or embeddings can be exploited to manipulate model outputs or bypass restrictions.
 
 #### MITRE ATT&CK Mapping
@@ -123,7 +137,9 @@ The OWASP Top 10 for LLM Applications identifies the most critical vulnerabiliti
 - **Embedding Validation**: Implement regular validation and testing of embedding integrity.
 - **Adversarial Testing**: Use adversarial techniques to identify and mitigate potential manipulation.
 
-### LLM09:2025 Misinformation
+---
+
+### [LLM09:2025 Misinformation](https://genai.owasp.org/)
 **Description:** LLMs can generate inaccurate, misleading, or biased information that influences decision-making or public perception.
 
 #### MITRE ATT&CK Mapping
@@ -135,7 +151,9 @@ The OWASP Top 10 for LLM Applications identifies the most critical vulnerabiliti
 - **Retrieval-Augmented Generation (RAG)**: Apply retrieval-augmented generation techniques for better grounding.
 - **Human Oversight**: Use human oversight and cross-verification to ensure factual accuracy.
 
-### LLM10:2025 Unbounded Consumption
+---
+
+### [LLM10:2025 Unbounded Consumption](https://genai.owasp.org/)
 **Description:** Uncontrolled resource consumption by LLMs can lead to denial of service (DoS) or other resource-based attacks.
 
 #### MITRE ATT&CK Mapping
