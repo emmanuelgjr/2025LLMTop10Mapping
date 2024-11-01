@@ -1,10 +1,9 @@
 # OWASP Top 10 for Large Language Model Applications 2025  Mapped to CWE and CVE 
 
-This repo maps vulnerabilities from the OWASP Top 10 for LLM Applications 2025 to corresponding Common Vulnerabilities and Exposures (CVEs) and Common Weakness Enumerations (CWEs). This mapping provides insight into attack vectors, mitigation strategies, and security frameworks. We understand vulnerabilities in the wild are coming up every day, use the mapping as a reference and keep vigilant on new developments.
+This repo maps vulnerabilities from the OWASP Top 10 for LLM Applications 2025 to corresponding [**Common Weakness Enumerations (CWEs)**](https://cwe.mitre.org/) and [**Common Vulnerabilities and Exposures (CVEs)**](https://www.cve.org/). This mapping provides insight into attack vectors, mitigation strategies, and security frameworks. We understand vulnerabilities in the wild are coming up every day, use the mapping as a reference and keep vigilant on new developments.
 
 
 
-## Summary Table
 
 | **Vulnerability**                      | **CWE**                                                                                   | **CVE**                                                                 | **Suggested Improvements**                                                   |
 |------------------------------------|----------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------|
@@ -25,11 +24,13 @@ This repo maps vulnerabilities from the OWASP Top 10 for LLM Applications 2025 t
 ## [LLM01:2025 Prompt Injection](https://genai.owasp.org/)
 Prompt injection occurs when malicious inputs manipulate model behaviour, bypass safety measures, or trigger unauthorized actions.
 
-- **Related CVEs**:
-  - [CVE-2024-5184](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-5184): Exploited LLM prompt injection, leading to sensitive information leaks and unauthorized actions.
 - **Related CWEs**:
   - [CWE-20: Improper Input Validation](https://cwe.mitre.org/data/definitions/20.html)
   - [CWE-94: Improper Control of Code Generation](https://cwe.mitre.org/data/definitions/94.html)
+
+- **Related CVEs**:
+  - [CVE-2024-5184](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-5184): Exploited LLM prompt injection, leading to sensitive information leaks and unauthorized actions.
+
 
 **Mitigation: Input Sanitization and Validation**
 - Use input sanitization to filter out unexpected characters or expressions that could lead to prompt injection. Regular expressions and input validation libraries can help detect and block suspicious inputs.
@@ -42,11 +43,13 @@ Prompt injection occurs when malicious inputs manipulate model behaviour, bypass
 ## [LLM02:2025 Sensitive Information Disclosure](https://genai.owasp.org/)
 Sensitive information disclosure involves unintended exposure of personal, confidential, or proprietary data.
 
-- **Related CVEs**:
-  - [CVE-2019-20634](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-20634): Demonstrated leakage of training data enabling model inversion attacks.
 - **Related CWEs**:
   - [CWE-200: Exposure of Sensitive Information](https://cwe.mitre.org/data/definitions/200.html)
   - [CWE-201: Insertion of Sensitive Information Into Logs](https://cwe.mitre.org/data/definitions/201.html)
+
+- **Related CVEs**:
+  - [CVE-2019-20634](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-20634): Demonstrated leakage of training data enabling model inversion attacks.
+
 
 **Mitigation: Data Masking and Redaction**
 - Apply data masking or redaction to sensitive information before displaying or logging it. Redaction tools, such as pyTainr, can prevent unintentional exposure of private information.
@@ -59,12 +62,14 @@ Sensitive information disclosure involves unintended exposure of personal, confi
 ## [LLM03:2025 Supply Chain Vulnerabilities](https://genai.owasp.org/)
 Supply chain vulnerabilities involve compromised dependencies, tools, or pre-trained models used in LLMs.
 
-- **Related CVEs**:
-  - [CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228): Log4j vulnerability exploited in LLM deployments.
-  - [CVE-2022-22965](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22965): Spring4Shell vulnerability affecting dependencies used in LLMs.
 - **Related CWEs**:
   - [CWE-506: Embedded Malicious Code](https://cwe.mitre.org/data/definitions/506.html)
   - [CWE-119: Improper Restriction of Operations within Buffer Bounds](https://cwe.mitre.org/data/definitions/119.html)
+
+- **Related CVEs**:
+  - [CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228): Log4j vulnerability exploited in LLM deployments.
+  - [CVE-2022-22965](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22965): Spring4Shell vulnerability affecting dependencies used in LLMs.
+
 
 **Mitigation: Software Bill of Materials (SBOM) Validation**
 - Use an SBOM tool like CycloneDX to track dependencies and ensure they are up to date. This approach can detect vulnerabilities in third-party components that might be exploited within LLM applications.
@@ -77,11 +82,13 @@ Supply chain vulnerabilities involve compromised dependencies, tools, or pre-tra
 ## [LLM04:2025 Data and Model Poisoning](https://genai.owasp.org/)
 Data and model poisoning involves manipulating training data to alter model behaviour.
 
-- **Related CVEs**:
-  - No specific CVEs; primarily involves introducing biases or malicious behaviour through poisoned data.
 - **Related CWEs**:
   - [CWE-506: Embedded Malicious Code](https://cwe.mitre.org/data/definitions/506.html)
   - [CWE-1021: Improper Data Validation](https://cwe.mitre.org/data/definitions/1021.html)
+
+- **Related CVEs**:
+  - No specific CVEs; primarily involves introducing biases or malicious behaviour through poisoned data.
+
 
 **Mitigation: Strict Data Validation**
 - Conduct rigorous validation of all training data to prevent poisoned data from being ingested by the model. Validate the source and quality of data inputs continuously to ensure reliability.
@@ -94,12 +101,14 @@ Data and model poisoning involves manipulating training data to alter model beha
 ## [LLM05:2025 Insecure Output Handling](https://genai.owasp.org/)
 Insecure output handling occurs when LLM outputs are not sanitized, leading to vulnerabilities like cross-site scripting (XSS).
 
-- **Related CVEs**:
-  - [CVE-2020-8193](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8193): XSS vulnerability impacting LLM-integrated web interfaces.
-  - [CVE-2021-21234](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21234): Improper output encoding leading to injection risks.
 - **Related CWEs**:
   - [CWE-79: Cross-site Scripting (XSS)](https://cwe.mitre.org/data/definitions/79.html)
   - [CWE-116: Improper Output Encoding](https://cwe.mitre.org/data/definitions/116.html)
+
+- **Related CVEs**:
+  - [CVE-2020-8193](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8193): XSS vulnerability impacting LLM-integrated web interfaces.
+  - [CVE-2021-21234](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21234): Improper output encoding leading to injection risks.
+
 
 **Mitigation: Output Encoding**
 - Encode all outputs to prevent cross-site scripting (XSS) vulnerabilities. Use libraries that encode characters to avoid direct HTML/JavaScript execution, such as OWASP's HTML Sanitizer.
@@ -112,10 +121,12 @@ Insecure output handling occurs when LLM outputs are not sanitized, leading to v
 ## [LLM06:2025 Excessive Agency](https://genai.owasp.org/)
 Excessive agency involves LLMs gaining unauthorized control over actions beyond intended capabilities.
 
-- **Related CVEs**:
-  - No specific CVEs; includes unauthorized API calls by LLMs.
 - **Related CWEs**:
   - [CWE-862: Missing Authorization](https://cwe.mitre.org/data/definitions/862.html)
+
+- **Related CVEs**:
+  - No specific CVEs; includes unauthorized API calls by LLMs.
+
 
 **Mitigation: Access Control Enforcement**
 - Limit actions that the LLM can perform by implementing strict access control. Only authorized users or services should be able to perform sensitive actions or access restricted data.
@@ -128,10 +139,12 @@ Excessive agency involves LLMs gaining unauthorized control over actions beyond 
 ## [LLM07:2025 System Prompt Leakage](https://genai.owasp.org/)
 System prompt leakage involves exposing system-level instructions that control LLM behaviour.
 
-- **Related CVEs**:
-  - No specific CVEs; often discussed in research on prompt leakage via inference.
 - **Related CWEs**:
   - [CWE-209: Error Message Sensitive Information Exposure](https://cwe.mitre.org/data/definitions/209.html)
+
+- **Related CVEs**:
+  - No specific CVEs; often discussed in research on prompt leakage via inference.
+
 
 **Mitigation: Prompt Management and Security Policies**
 - Implement a strict management policy for prompts, ensuring sensitive prompts are secured and inaccessible to unauthorized users. Control prompt visibility in logs and avoid exposing them in error messages.
@@ -144,10 +157,12 @@ System prompt leakage involves exposing system-level instructions that control L
 ## [LLM08:2025 Vector and Embedding Weaknesses](https://genai.owasp.org/)
 Vector and embedding weaknesses involve vulnerabilities in LLM embeddings, leading to manipulation or evasion.
 
-- **Related CVEs**:
-  - No specific CVEs; primarily involves adversarial inputs exploiting embedding weaknesses.
 - **Related CWEs**:
   - [CWE-682: Incorrect Calculation](https://cwe.mitre.org/data/definitions/682.html)
+
+- **Related CVEs**:
+  - No specific CVEs; primarily involves adversarial inputs exploiting embedding weaknesses.
+
 
 **Mitigation: Embedding Validation**
 - Regularly validate embeddings to ensure they fall within expected ranges. Implement bounds-checking to detect and prevent out-of-range embeddings that could lead to manipulation or misinterpretation.
@@ -160,11 +175,13 @@ Vector and embedding weaknesses involve vulnerabilities in LLM embeddings, leadi
 ## [LLM09:2025 Misinformation](https://genai.owasp.org/)
 Misinformation occurs when LLMs generate incorrect, misleading, or unsafe information, impacting trust and decision-making.
 
-- **Related CVEs**:
-  - No specific CVEs; often due to flaws in training or contextual interpretation.
 - **Related CWEs**:
   - [CWE-84: Improper Neutralization of Encoded Information](https://cwe.mitre.org/data/definitions/84.html)
   - [CWE-346: Origin Validation Error](https://cwe.mitre.org/data/definitions/346.html)
+
+- **Related CVEs**:
+  - No specific CVEs; often due to flaws in training or contextual interpretation.
+
 
 **Mitigation: Fact-Checking Mechanisms**
 - Incorporate automated fact-checking tools to validate the information generated by the LLM, especially in high-stakes or sensitive applications. Fact-checking reduces the risk of spreading misinformation.
@@ -177,11 +194,13 @@ Misinformation occurs when LLMs generate incorrect, misleading, or unsafe inform
 ## [LLM10:2025 Unbounded Consumption](https://genai.owasp.org/)
 Unbounded consumption refers to excessive resource consumption (e.g., memory, processing), leading to denial of service (DoS).
 
+- **Related CWEs**:
+  - [CWE-400: Uncontrolled Resource Consumption](https://cwe.mitre.org/data/definitions/400.html)
+
 - **Related CVEs**:
   - [CVE-2016-10033](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10033): DoS vulnerability through excessive resource consumption.
   - [CVE-2018-1002105](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1002105): Resource exhaustion vulnerability impacting LLM server-side implementations.
-- **Related CWEs**:
-  - [CWE-400: Uncontrolled Resource Consumption](https://cwe.mitre.org/data/definitions/400.html)
+
 
 **Mitigation: Resource Monitoring and Rate Limiting**
 - Set up resource monitoring and apply rate limits to control memory and CPU usage. Use tools like Kubernetes or Docker resource management to prevent unbounded consumption.
