@@ -40,7 +40,7 @@ Additionally, it provides practical examples, mitigation timelines, severity rat
 - [MITRE ATLAS Techniques Overview](https://atlas.mitre.org)
 
 **Mitigation Strategies:**
-- Constrain model behavior through context adherence.
+- Constrain model behaviour through context adherence.
 - Filter inputs and outputs to limit prompt injection attacks.
 - Implement regular penetration testing and adversarial simulations.
 
@@ -49,7 +49,7 @@ Additionally, it provides practical examples, mitigation timelines, severity rat
 **Use Case for Mitigation:** In chatbot applications, ensure that user inputs are sanitized and that responses are filtered to avoid returning unintended results.
 
 **References:**
-- [ENISA AI Threat Landscape](https://www.enisa.europa.eu)
+- [ENISA AI Threat Landscape](https://www.enisa.europa.eu/publications/enisa-threat-landscape-2024)
 - [MITRE ATLAS](https://atlas.mitre.org)
 
 ---
