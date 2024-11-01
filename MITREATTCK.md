@@ -1,6 +1,6 @@
 # OWASP Top 10 for LLM Applications 2025 Mapped to MITRE ATT&CK
 
-The OWASP Top 10 for LLM Applications identifies the most critical vulnerabilities impacting AI models, while the MITRE ATT&CK framework provides a comprehensive collection of adversary tactics and techniques. Mapping these vulnerabilities to MITRE ATT&CK to bridge the gap between vulnerability identification and actionable mitigation, enabling a proactive approach to AI security for developers, security teams, and stakeholders.
+The OWASP Top 10 for LLM Applications identifies the most critical vulnerabilities impacting AI models, while the [**MITRE ATT&CK**](https://attack.mitre.org/) framework provides a comprehensive collection of adversary tactics and techniques. Mapping these vulnerabilities to MITRE ATT&CK to bridge the gap between vulnerability identification and actionable mitigation, enabling a proactive approach to AI security for developers, security teams, and stakeholders.
 
 | Vulnerability                   | MITRE ATT&CK Mapping                                                                 | Mitigation                                                                                           |
 |---------------------------------|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
