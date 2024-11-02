@@ -1,7 +1,9 @@
 # [**OWASP Top 10 for LLM Applications 2025**](https://genai.owasp.org/) Mapping to Security Frameworks
 
 Mapping the OWASP Top 10 for Large Language Models (LLMs) Applications 2025 to well-established security frameworks is a crucial step in developing secure AI applications. 
+
 As LLMs become increasingly integrated into sensitive and high-stakes environments, their complex structures introduce unique risks that can be challenging to address with traditional cybersecurity practices alone. 
+
 We must understand there is not one size fits all and each industry and particular organization requires a customized approach.
 
 ---
